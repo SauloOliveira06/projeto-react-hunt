@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .App {
   text-align: center;
 }
@@ -30,4 +32,212 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* ================== SLIDE =================== */
+
+#ubea-hero {
+  min-height: 400px;
+  background: #fff url(../../../../assets/images/loader.gif) no-repeat center center;
+}
+#ubea-hero .btn {
+  font-size: 24px;
+}
+#ubea-hero .btn.btn-primary {
+  padding: 14px 30px !important; /* 14px 30px */
+}
+#ubea-hero .flexslider {
+  border: none;
+  z-index: 1;
+  margin-bottom: 0;
+}
+#ubea-hero .flexslider .slides {
+  position: relative;
+  overflow: hidden;
+}
+#ubea-hero .flexslider .slides li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+  position: relative;
+}
+#ubea-hero .flexslider .slides li .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+#ubea-hero .flexslider .flex-control-nav {
+  bottom: 40px;
+  z-index: 1000;
+}
+#ubea-hero .flexslider .flex-control-nav li a {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+#ubea-hero .flexslider .flex-control-nav li a:hover {
+  background: rgba(252, 71, 71, 0.5);
+}
+#ubea-hero .flexslider .flex-control-nav li a.flex-active {
+  cursor: pointer;
+  background: rgba(252, 71, 71, 0.95);
+}
+#ubea-hero .flexslider .flex-direction-nav {
+  display: block;
+}
+#ubea-hero .flexslider .flex-direction-nav a {
+  position: absolute;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+#ubea-hero .flexslider .flex-direction-nav a:before {
+  left: 0;
+  top: 0;
+  color: #fff !important;
+  text-shadow: none !important;
+  font-size: 40px;
+  position: relative;
+  z-index: 10;
+}
+#ubea-hero .flexslider .flex-direction-nav a.flex-prev { /* ICONE DE PREVIOUS */
+  opacity: 1 !important;
+  left: 40px !important;
+  top: 55%;
+}
+#ubea-hero .flexslider .flex-direction-nav a.flex-prev:before {
+
+  text-indent: 0px !important;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  border: 2px solid #fff;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e929";
+}
+#ubea-hero .flexslider .flex-direction-nav a.flex-next {
+  right: 40px !important;
+  opacity: 1 !important;
+  top: 54%;
+}
+#ubea-hero .flexslider .flex-direction-nav a.flex-next:before { /* ICONE DE NEXT */
+
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  border: 2px solid #fff;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-indent: 0px !important;
+  right: 0;
+  content: "\e92a";
+}
+#ubea-hero .flexslider .slider-text {
+  display: table;
+  opacity: 0;
+  min-height: 700px;
+}
+#ubea-hero .flexslider .slider-text > .slider-text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  min-height: 400px; /* 700px alterado */
+}
+#ubea-hero .flexslider .slider-text > .slider-text-inner h2 {
+  font-family: Nunito, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 2%;
+}
+@media screen and (max-width: 768px) {
+  #ubea-hero .flexslider .slider-text > .slider-text-inner h2 {
+    font-size: 40px;
+  }
+}
+#ubea-hero .flexslider .slider-text > .slider-text-inner .ubea-lead {
+  font-size: 20px;
+  color: #fff;
+}
+#ubea-hero .flexslider .slider-text > .slider-text-inner .ubea-lead .icon-heart {
+  color: #d9534f;
+}
+
+.ubea-section-overflow {
+  overflow: hidden;
+  position: relative;
+}
+
+#ubea-services .feature-left .icon i {
+  color: #cccccc !important;
+}
+#ubea-services .feature-left h3 {
+  color: #FF5126;
+  font-size: 22px;
+}
+
+
+.slide1{
+  background: url(./public/arquivos-layout/images/cumprimento.jpg)
+}
+
+.slide2{
+  background-image: url(./arquivos-layout/images/meetup.png)
+}
+
+.slide3{
+  background-image: url(./public/arquivos-layout/images/cursos.jpg);
+}
+
+.slide4{
+  background-image: url(./public/arquivos-layout/images/ceu-estrelado.jpg)
+}
+
+/* ============ FRASE ============ */
+
+.conteudo-frase{
+    width: 50%;
+}  
+.conteudo-frase p{
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #4d4d4d;
+    
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.container-frase-home{
+    height: 300px;
+    background-color: #f2f2f2;
+    margin-bottom: 108px;
 }

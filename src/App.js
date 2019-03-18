@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import List from './Components/List';
 import Title from './Components/Title';
 import Navbar from './Components/Navbar';
+import Slide from './Components/Slide';
+import Frase from './Components/Frase';
 
 class App extends Component{
 
@@ -34,9 +36,10 @@ class App extends Component{
       return(
           <div className="">
             <Navbar/>
-            <Title title={'Lista de Estudantes'}/>
-            <List students = {this.state.names} onRemoveName = {this.removeName}/>
+            <Slide/>
+            <Frase />
           </div>
+          
       );
   }
 }
