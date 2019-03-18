@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>
+            .cls-1{fill:#fc4747}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="_005-facebook" data-name="005-facebook">
+        <circle id="Ellipse_11" cx="17.5" cy="17.5" r="17.5" class="cls-1" data-name="Ellipse 11"/>
+        <path id="Path_197" d="M47.772 33h-3.079v11.273H40.03V33h-2.218v-3.967h2.218v-2.564c0-1.834.871-4.706 4.705-4.706l3.454.014v3.847h-2.506a.949.949 0 0 0-.989 1.08v2.332h3.485z" class="cls-2" data-name="Path 197" transform="translate(-26.185 -15.071)"/>
+    </g>
+</svg>

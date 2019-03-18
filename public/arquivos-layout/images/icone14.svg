@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="115" viewBox="0 0 115 115">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#ff6161}.cls-2{fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="icone" transform="translate(1062 1.5)">
+        <g id="Group_283" data-name="Group 283">
+            <g id="Group_282" data-name="Group 282">
+                <g id="Group_281" data-name="Group 281">
+                    <g id="Group_278" data-name="Group 278">
+                        <g id="Group_277" data-name="Group 277">
+                            <path id="Path_372" d="M-1004.5 113.5A57.565 57.565 0 0 1-1062 56a57.565 57.565 0 0 1 57.5-57.5A57.565 57.565 0 0 1-947 56a57.565 57.565 0 0 1-57.5 57.5zm0-111.107A53.668 53.668 0 0 0-1058.107 56a53.668 53.668 0 0 0 53.607 53.607A53.668 53.668 0 0 0-950.893 56 53.668 53.668 0 0 0-1004.5 2.393z" class="cls-1" data-name="Path 372"/>
+                        </g>
+                    </g>
+                    <g id="Group_280" data-name="Group 280">
+                        <g id="Group_279" data-name="Group 279">
+                            <path id="Path_373" d="M-1033.937 33.8l7.089-7.237h14.384l.4 58.543-15.524.331-6.243-4.107zm45.5 25.819l4.328-3.628h8.8l.239 29.28-9.484.166-3.811-2.044zm-20.459-8.417l5.6-4.805h11.362l.313 38.818-12.246.222-4.935-2.725z" class="cls-2" data-name="Path 373"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

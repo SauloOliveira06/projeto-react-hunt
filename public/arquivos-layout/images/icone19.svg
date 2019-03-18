@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="115" viewBox="0 0 115 115">
+    <defs>
+        <style>
+            .cls-1{fill:#ff6161}.cls-2{fill:none;stroke:#ff6161;stroke-miterlimit:10;stroke-width:2.268px}
+        </style>
+    </defs>
+    <g id="icone" transform="translate(168 1.5)">
+        <g id="Group_309" data-name="Group 309">
+            <g id="Group_308" data-name="Group 308">
+                <g id="Group_307" data-name="Group 307">
+                    <path id="Path_383" d="M-110.5 113.5A57.565 57.565 0 0 1-168 56a57.565 57.565 0 0 1 57.5-57.5A57.565 57.565 0 0 1-53 56a57.565 57.565 0 0 1-57.5 57.5zm0-111.107A53.668 53.668 0 0 0-164.107 56a53.667 53.667 0 0 0 53.607 53.606A53.666 53.666 0 0 0-56.894 56 53.668 53.668 0 0 0-110.5 2.393z" class="cls-1" data-name="Path 383"/>
+                </g>
+            </g>
+        </g>
+        <g id="Group_311" data-name="Group 311">
+            <g id="Group_310" data-name="Group 310">
+                <path id="Rectangle_221" d="M0 0h60.802v8.769H0z" class="cls-2" data-name="Rectangle 221" transform="rotate(.925 -4634.155 -8685.928)"/>
+                <path id="Rectangle_222" d="M0 0h53.855v8.769H0z" class="cls-2" data-name="Rectangle 222" transform="rotate(.925 -3932.343 -8465.125)"/>
+                <path id="Rectangle_223" d="M0 0h42.198v8.769H0z" class="cls-2" data-name="Rectangle 223" transform="rotate(.925 -3231.768 -8098.435)"/>
+                <path id="Rectangle_224" d="M0 0h31.57v8.769H0z" class="cls-2" data-name="Rectangle 224" transform="rotate(.925 -2530.894 -7763.586)"/>
+                <path id="Rectangle_225" d="M0 0h21.628v8.769H0z" class="cls-2" data-name="Rectangle 225" transform="rotate(.925 -1829.88 -7449.985)"/>
+            </g>
+        </g>
+    </g>
+</svg>
