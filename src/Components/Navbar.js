@@ -9,7 +9,7 @@ class Navbar extends Component {
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-5 col-md-5 col-xs-4 teste">
-                                <div id="ubea-logo"><a href=""><img src="assets/images/logo-hunt.svg"/></a></div>
+                                <div id="ubea-logo"><a href=""><img src="arquivos-layout/images/logo-hunt.svg"/></a></div>
                             </div>
                             <div class="col-lg-7 col-md-7 menu-1 main-nav teste1">
                                 <ul>
