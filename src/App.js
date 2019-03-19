@@ -9,6 +9,7 @@ import SessaoServicos from './Components/SessaoServicos';
 import SessaoVagas from './Components/SessaoVagas';
 import SessaoDepoimentos from './Components/SessaoDepoimentos';
 import SessaoEbook from './Components/SessaoEbook';
+import Footer from './Components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -49,6 +50,7 @@ class App extends Component {
         <SessaoContador />
         <SessaoDepoimentos />
         <SessaoEbook />
+        <Footer />
       </div>
 
     );
