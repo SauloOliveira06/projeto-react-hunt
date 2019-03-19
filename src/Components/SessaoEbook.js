@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 
+
+let img = 'arquivos-layout/images/back-cafe.jpg'
+var ebookBackground  = {
+    background: `url(${img}) center top no-repeat`
+}
+// background: url("../images/back-cafe.jpg") ;
+// ebookBackground
 class SessaoEbook extends Component {
   render(){
     return(
   <div>
-    <div class="flex-container ebook-background">
+    <div class="flex-container ebook-background" style={ ebookBackground }>
       <div class="container col-md-9">
         <div class="flex-conteudo-ebook">
           <p>Leia nossos materiais <br/>sobre RH</p>
