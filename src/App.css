@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .App {
   text-align: center;
@@ -490,7 +491,7 @@
     color: #fff;
 }
 .card1{
-    background-image: url(../public/arquivos-layout/images/banner-consultoria.jpg);
+    /*background-image: url(../public/arquivos-layout/images/banner-consultoria.jpg); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -512,7 +513,7 @@
     border-radius: 5px;
 }
 .card2{
-    background-image: url(../public/arquivos-layout/images/meetup.png);
+    /*background-image: url(../public/arquivos-layout/images/meetup.png); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -535,7 +536,7 @@
     border-radius: 5px;
 }
 .card3{  
-    background-image: url(../public/arquivos-layout/images/cumprimento.jpg);
+    /*background-image: url(../public/arquivos-layout/images/cumprimento.jpg); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -558,7 +559,7 @@
     border-radius: 5px;
 }
 .card4{
-    background-image: url(../public/arquivos-layout/images/cursos.jpg);
+   /* background-image: url(../public/arquivos-layout/images/cursos.jpg); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -665,4 +666,293 @@
     text-decoration: none;
     color: #fff;
     transition: 0.5s;
+}
+
+
+/*  
+    =========================
+    SESSAO VAGAS - HOME 
+    =========================
+*/
+.sessao-vagas{
+  font-family: Nunito, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #4d4d4d;
+  
+  margin: 108px 0 79px 60px;
+  
+}
+#sessao-vagas{
+  margin: 0 0 224px 0;
+}
+.container-vagas {
+  display: flex;
+  justify-content: center;
+}
+.container-vagas2 {
+  display: flex;
+  justify-content: center;
+}
+/* margin para distancia de bottom e right */
+.container-vagas > div{
+  margin: 10px;
+  text-align: center;
+}
+.container-vagas2 > div{
+  margin: 10px;
+  text-align: center; 
+}
+#vaga-1{
+  transition: transform .2s;
+}
+#vaga-2{
+  transition: transform .2s; 
+}
+#vaga-3{
+  transition: transform .2s;  
+}
+#vaga-4{
+  transition: transform .2s;
+}
+#vaga-1:hover{
+  transform: scale(1.03);
+}
+#vaga-2:hover{
+  transform: scale(1.03);
+}
+#vaga-3:hover{
+  transform: scale(1.03);
+}
+#vaga-4:hover{
+  transform: scale(1.03);
+}
+.container-vagas img{
+  width: 470px; height: 470px;
+} 
+.container-vagas2 img{
+  width: 470px; height: 470px;
+}
+
+/*  
+    =========================
+    SESSAO CONTADOR - HOME 
+    =========================
+*/
+#facts {
+  /*background: url(../../../../\assets/images/fundo-rough.jpg) center top no-repeat fixed; */
+  background-size: cover;
+  padding: 80px 0 0 12%; /* 60px 0 0 0*/
+  position: relative;
+  height: 100%;
+}
+  
+#facts::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: 2;
+}
+
+#facts .container {
+  position: relative;
+  z-index: 1;
+}
+
+#facts .counters span {
+  font-family: Roboto, sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.77;
+  letter-spacing: normal;
+  text-align: center;
+  color: #387dba;
+}
+
+#facts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+}
+
+#facts .facts-img {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*  
+    =========================
+    SESSAO DEPOIMENTOS - HOME 
+    =========================
+*/
+
+.sessao-depoimentos{
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    padding: 108px 0 79px;
+    padding-left: 8%;
+}
+  
+#sessao-comentarios{
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 183px;
+}
+
+.container-comentarios1{
+    padding-left: 7%;
+    margin-bottom: 3%;
+}
+.container-comentarios2{
+    padding-left: 7%;  
+}
+
+.card-comentario1{ 
+    width: 45%;
+}  
+.card-comentario2{
+    width: 45%; 
+}
+.card-comentario3{ 
+    width: 45%;
+}
+
+.card-comentario4{
+    width: 45%; 
+}
+
+.bloco-foto{
+    width: 110px;
+    height: 110px;
+    margin-right: 2%;
+    float: left;
+}
+.bloco-foto img{
+    bottom: 0;
+    width: 100%;
+    border-radius: 50%;
+}
+.bloco-comentario{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d384d;
+}
+  
+.bloco-comentario b{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d384d;
+}
+
+
+/*  
+    =========================
+    SESSAO EBOOK - HOME 
+    =========================
+*/
+
+.flex-container{ /* CONTAINER */
+  display: flex;
+  align-items: center;
+  height: 350px;
+  max-width: 100%;
+}
+
+.ebook-background{ /* BACKGROUND */
+  /*background: url(../../../../assets/images/back-cafe.jpg) center top no-repeat;*/
+  background-size: cover;
+  padding: 0 0 0 0;
+  position: relative;
+}
+.ebook-background::before { /* FILTRO RGBA */
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(84, 151, 211, 0.6);    
+}
+.ebook-background .container {
+  position: relative; 
+  padding: 0 0 0 2%;
+}
+
+.flex-conteudo-ebook p{ /* FONTE DA SESSAO */
+  font-family: Nunito, sans-serif;
+  width: 479px;
+  height: 104px;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #ffffff;
+}
+.botao-baixar-ebook{ /* BOTAO */
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  transition: 0.4s;
+
+  color: #fff;
+  background: #f4863b;/* #18d26e; */
+  width: 271px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration:none;
+  list-style: none;
+}
+
+.botao-baixar-ebook:hover{ /* HOVER DO BOTAO */
+  background: #fc4747;
+  color: #fff;
+  text-decoration:none;
+  list-style: none;
 }
