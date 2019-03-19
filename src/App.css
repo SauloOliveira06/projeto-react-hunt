@@ -39,7 +39,7 @@
 
 #ubea-hero {
   min-height: 400px;
-  background: #fff url(../../../../assets/images/loader.gif) no-repeat center center;
+  /* background: #fff url(../public/arquivos-layout/images/loader.gif) no-repeat center center; */
 }
 #ubea-hero .btn {
   font-size: 24px;
@@ -199,21 +199,21 @@
 }
 
 
-.slide1{
-  background: url(./public/arquivos-layout/images/cumprimento.jpg)
+/* .slide1{
+  background: url("../public/arquivos-layout/images/cumprimento.jpg")
 }
 
 .slide2{
-  background-image: url(./arquivos-layout/images/meetup.png)
+  background: url(../public/arquivos-layout/images/meetup.png)
 }
 
 .slide3{
-  background-image: url(./public/arquivos-layout/images/cursos.jpg);
+  background: url("../public/arquivos-layout/images/cursos.jpg");
 }
 
 .slide4{
-  background-image: url(./public/arquivos-layout/images/ceu-estrelado.jpg)
-}
+  background: url(../public/arquivos-layout/images/ceu-estrelado.jpg);
+} */
 
 /* ============ FRASE ============ */
 
