@@ -4,7 +4,8 @@ import Title from './Components/Title';
 import Navbar from './Components/Navbar';
 import Slide from './Components/Slide';
 import Frase from './Components/Frase';
-import Footer from './Components/Footer';
+//import Footer from './Components/Footer';
+import SessaoServicos from './Components/SessaoServicos';
 import './App.css';
 
 class App extends Component {
@@ -40,7 +41,7 @@ class App extends Component {
         <Navbar />
         <Slide />
         <Frase />
-        <Footer />
+        <SessaoServicos />
       </div>
 
     );

@@ -218,26 +218,451 @@
 /* ============ FRASE ============ */
 
 .conteudo-frase{
-    width: 50%;
+  width: 100%;
+  padding: 7% 0 0 20%;
+  position: absolute;
+  
 }  
 .conteudo-frase p{
-    font-family: Roboto, sans-serif;
-    font-size: 24px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.56;
-    letter-spacing: 1.6px;
-    text-align: left;
-    color: #4d4d4d;
-    
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #4d4d4d;
+  
+  width: 75%;
+
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .container-frase-home{
-    height: 300px;
-    background-color: #f2f2f2;
-    margin-bottom: 108px;
+  height: 300px;
+  background-color: #f2f2f2;
+  margin-bottom: 108px; 
+}
+
+/* ========== CARDS - HOME ========= */
+
+/*  
+    =========================
+    SESSAO SERVIÇOS - HOME 
+    =========================
+*/
+.titulo-seguimentos{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 110px;
+}
+.titulo-seguimentos p{
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    color: #4d4d4d;
+    padding: 0 0 79px 75px;
+}
+
+.card1{
+    background-color: #f4863b;
+    width: 470px;
+    height: 380px;
+    opacity: 0.95;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+.card2{
+    width: 470px;
+    height: 380px;
+    opacity: 0.95;
+    border-radius: 5px;
+    background-color: #5497d3;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+.card3{
+    width: 470px;
+    height: 380px;
+    opacity: 0.95;
+    border-radius: 5px;
+    background-color: #fc4747;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+.card4{
+    width: 470px;
+    height: 380px;
+    opacity: 0.95;
+    border-radius: 5px;
+    background-color: #8559a5;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+
+.container-cards1{
+    display: flex;
+    justify-content: center;
+}
+.container-cards2{
+    display: flex;
+    justify-content: center;
+}
+.container-cards1 > div{
+    background-color: transparent;
+    margin: 15px;
+}
+.container-cards2 > div{
+    background-color: transparent;
+    margin: 15px;
+}
+.container-cards1 a{
+    text-decoration: none;
+}
+.container-cards2 a{
+    text-decoration: none;
+}
+
+#sessao-cards-home{
+    margin: 0 0 110px;
+}
+
+.container-cards1 ul li{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #fff;
+    list-style: none;
+    position: relative;
+}
+.container-cards2 ul li{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #fff;  
+    list-style: none;
+    position: relative;
+}
+.titulo1 p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #ffffff;
+    padding: 30px 0 0 43px;
+}
+.titulo1 p::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: #db6b1f;
+    bottom: -45px;
+}
+.titulo2 p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #ffffff;
+    padding: 30px 0 0 43px;
+}
+.titulo2 p::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: #387dba;
+    bottom: -45px;
+}
+.titulo3 p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #ffffff;
+    padding: 30px 0 0 43px;
+}
+.titulo3 p::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 3px;
+    border-radius: 2px;
+    background: #e32929;
+    bottom: -45px;
+}
+.titulo4 p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #ffffff;
+    padding: 30px 0 0 43px;
+}
+.titulo4 p::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 3px;
+    border-radius: 2px;
+    background: #6b3e8c;
+    bottom: -45px;
+}
+.titulo1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.titulo2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.titulo3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.titulo4 a{
+    text-decoration: none;
+    color: #fff;
+}
+.card1{
+    background-image: url(../public/arquivos-layout/images/banner-consultoria.jpg);
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+
+    transition: transform .2s;
+}
+.card1:hover{
+    transform: scale(1.03);
+}
+
+.card1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(244, 134, 59, 0.95);
+    border-radius: 5px;
+}
+.card2{
+    background-image: url(../public/arquivos-layout/images/meetup.png);
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+
+    transition: transform .2s;
+}
+
+.card2:hover{
+    transform: scale(1.03); 
+}
+
+.card2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(84, 151, 211, 0.95);
+    border-radius: 5px;
+}
+.card3{  
+    background-image: url(../public/arquivos-layout/images/cumprimento.jpg);
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+
+    transition: transform .2s;
+}
+
+.card3:hover{
+    transform: scale(1.03); 
+}
+
+.card3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(252, 71, 71, 0.95);
+    border-radius: 5px;
+}
+.card4{
+    background-image: url(../public/arquivos-layout/images/cursos.jpg);
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+
+    transition: transform .2s;
+}
+
+.card4:hover{
+    transform: scale(1.03);  
+}
+
+.card4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(133, 89, 165, 0.95);
+    border-radius: 5px;
+}
+  
+/* SIMBOLOS SVG - CARDS HOME
+--------------------------------*/
+.card1 img{              
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    margin: 0 25px 25px;
+}
+.card2 img{
+    width: 50px; 
+    height: 48px;
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    margin: 0 25px 25px;
+}
+.card3 img{
+    width: 50px; 
+    height: 48px;
+    position: absolute;
+    float: right; 
+    bottom: 0;
+    right: 0;
+    margin: 0 25px 25px;
+}
+.card4 img{
+    width: 50px; 
+    height: 48px;
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    margin: 0 25px 25px;
+}
+
+
+/*  
+    =========================
+    BOTAO SESSAO SERVIÇOS - HOME 
+    =========================
+*/
+.div-btn-servicos{
+    display: flex;
+    justify-content: center;
+}
+  
+.btn-servicos:hover{
+    background-color: rgb(252, 71, 71);
+    transition: 0.5s;
+}
+  
+ .btn-servicos{
+    width: 335px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(244, 134, 59, 0.88);
+    color: #fff;
+    text-align: center;
+    float: left;
+    
+    position: relative;
+    /* flex para alinhar texto do botao */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;  
+}
+.div-btn-servicos a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
 }

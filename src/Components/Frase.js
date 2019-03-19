@@ -25,7 +25,7 @@ class Frase extends Component{
                         {this.state.frasepage.length === 0 ?
                             <div>Carregando</div>
                             :
-                            <p>{this.state.frasepage.fields.conteudoFraseDesc}!!!</p>
+                            <p>{this.state.frasepage.fields.conteudoFraseDesc}</p>
                         }
                         </div>
                     </div>
