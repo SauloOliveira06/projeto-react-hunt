@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
-import List from './Components/List';
-import Title from './Components/Title';
+// import List from './Components/List';
+// import Title from './Components/Title';
 import Navbar from './Components/Navbar';
 import Slide from './Components/Slide';
+import Footer from './Components/Footer';
 import Frase from './Components/Frase';
-import SessaoContador from './Components/SessaoContador';
 import SessaoServicos from './Components/SessaoServicos';
 import './App.css'
-import SessaoVagas from './Components/SessaoVagas';
-import SessaoDepoimentos from './Components/SessaoDepoimentos';
-import SessaoEbook from './Components/SessaoEbook';
-import Footer from './Components/Footer';
-import './App.css';
-
-class App extends Component {
+class About extends Component {
 
   constructor() {
     super()
@@ -47,11 +41,8 @@ class App extends Component {
         <Slide />
         <Frase />
         <SessaoServicos />
-        <SessaoVagas />
-        <SessaoContador />
-        <SessaoDepoimentos />
-        <SessaoEbook />
-        <Footer />
+
+        <Footer/>
       </div>
 
     );
@@ -62,4 +53,4 @@ function simulateFetchFromDatabase() {
   return ['Pedro', 'Joseph', 'Paulo']
 }
 
-export default App
+export default About

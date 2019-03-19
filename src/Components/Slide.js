@@ -1,5 +1,25 @@
 import React, { Component } from 'react';
 
+
+let slide1 = 'arquivos-layout/images/cumprimento.jpg'
+var style1  = {
+    background: `url(${slide1}) round`
+}
+
+let slide2 = 'arquivos-layout/images/meetup.png'
+var style2  = {
+    background: `url(${slide2}) round`
+}
+
+let slide3 = 'arquivos-layout/images/cursos.jpg'
+var style3  = {
+    background: `url(${slide3}) round`
+}
+
+let slide4 = 'arquivos-layout/images/ceu-estrelado.jpg'
+var style4  = {
+    background: `url(${slide4}) round` 
+}
 class Slide extends Component {
     render(){
         return(
@@ -7,7 +27,7 @@ class Slide extends Component {
             <div id="ubea-hero" class="js-fullheight"  data-section="home">
                 <div class="flexslider js-fullheight">
                     <ul class="slides">
-                        <li class="slide1">
+                        <li class="slide1" style={ style1 }>
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 js-fullheight slider-text">
@@ -20,7 +40,7 @@ class Slide extends Component {
                                 </div>
                             </div>
                         </li>
-                        <li class="slide2">
+                        <li class="slide2" style={ style2 }>
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 js-fullheight slider-text">
@@ -33,7 +53,7 @@ class Slide extends Component {
                                 </div>
                             </div>
                         </li>
-                        <li class="slide3">
+                        <li class="slide3"  style={ style3 } >
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 js-fullheight slider-text">
@@ -46,12 +66,13 @@ class Slide extends Component {
                                 </div>
                             </div>
                         </li>
-                        <li class="slide4">
+                        <li class="slide4"  style={ style4 }>
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/4LvQmreoCSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rtskhhhUri8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        {/* <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/lCu5mlHFs5s    " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                                     </div>
                                 </div>
                             </div>
