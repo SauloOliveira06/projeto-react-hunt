@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 .App {
   text-align: center;
 }
@@ -199,22 +198,6 @@
   font-size: 22px;
 }
 
-
-/* .slide1{
-  background: url("../public/arquivos-layout/images/cumprimento.jpg")
-}
-
-.slide2{
-  background: url(../public/arquivos-layout/images/meetup.png)
-}
-
-.slide3{
-  background: url("../public/arquivos-layout/images/cursos.jpg");
-}
-
-.slide4{
-  background: url(../public/arquivos-layout/images/ceu-estrelado.jpg);
-} */
 
 /* ============ FRASE ============ */
 
