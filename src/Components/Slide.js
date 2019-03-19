@@ -51,7 +51,7 @@ class Slide extends Component {
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/4LvQmreoCSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/lCu5mlHFs5s    " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>

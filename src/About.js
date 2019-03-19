@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import List from './Components/List';
-import Title from './Components/Title';
+// import List from './Components/List';
+// import Title from './Components/Title';
 import Navbar from './Components/Navbar';
 import Slide from './Components/Slide';
 import Footer from './Components/Footer';
 import Frase from './Components/Frase';
-//import Footer from './Components/Footer';
 import SessaoServicos from './Components/SessaoServicos';
 import './App.css'
-class App extends Component {
+class About extends Component {
 
   constructor() {
     super()
@@ -42,6 +41,7 @@ class App extends Component {
         <Slide />
         <Frase />
         <SessaoServicos />
+
         <Footer/>
       </div>
 
@@ -53,4 +53,4 @@ function simulateFetchFromDatabase() {
   return ['Pedro', 'Joseph', 'Paulo']
 }
 
-export default App
+export default About
