@@ -3,11 +3,16 @@ import List from './Components/List';
 import Title from './Components/Title';
 import Navbar from './Components/Navbar';
 import Slide from './Components/Slide';
-import Footer from './Components/Footer';
 import Frase from './Components/Frase';
-//import Footer from './Components/Footer';
+import SessaoContador from './Components/SessaoContador';
 import SessaoServicos from './Components/SessaoServicos';
 import './App.css'
+import SessaoVagas from './Components/SessaoVagas';
+import SessaoDepoimentos from './Components/SessaoDepoimentos';
+import SessaoEbook from './Components/SessaoEbook';
+import Footer from './Components/Footer';
+import './App.css';
+
 class App extends Component {
 
   constructor() {
@@ -42,7 +47,11 @@ class App extends Component {
         <Slide />
         <Frase />
         <SessaoServicos />
-        <Footer/>
+        <SessaoVagas />
+        <SessaoContador />
+        <SessaoDepoimentos />
+        <SessaoEbook />
+        <Footer />
       </div>
 
     );
