@@ -1,13 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import List from './Components/List';
 import Title from './Components/Title';
 import Navbar from './Components/Navbar';
 import Slide from './Components/Slide';
 import Frase from './Components/Frase';
+import Footer from './Components/Footer';
+import './App.css';
 
-class App extends Component{
+class App extends Component {
 
-  constructor(){
+  constructor() {
     super()
     this.state = {
       names: []
@@ -15,15 +17,15 @@ class App extends Component{
     this.removeName = this.removeName.bind(this)
     console.log('Constructor')
   }
-  
-  removeName(nameRemoved){
+
+  removeName(nameRemoved) {
     console.log(nameRemoved);
     this.setState((state) => ({
       names: state.names.filter(name => name !== nameRemoved)
     }))
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const data = simulateFetchFromDatabase()
     this.setState({
       names: data
@@ -31,21 +33,22 @@ class App extends Component{
     console.log('componentDidMount')
   }
 
-  render(){
+  render() {
     console.log('render')
-      return(
-          <div className="">
-            <Navbar/>
-            <Slide/>
-            <Frase />
-          </div>
-          
-      );
+    return (
+      <div className="">
+        <Navbar />
+        <Slide />
+        <Frase />
+        <Footer />
+      </div>
+
+    );
   }
 }
 
-function simulateFetchFromDatabase(){
-  return ['Pedro','Joseph','Paulo']
+function simulateFetchFromDatabase() {
+  return ['Pedro', 'Joseph', 'Paulo']
 }
 
 export default App
