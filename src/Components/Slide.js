@@ -22,9 +22,6 @@ var style4  = {
 }
 class Slide extends Component {
     render(){
-
-        const slide = [`url(${slide1})`, `url(${slide1})` ,`url(${slide1})` ];
-
         return(
             <div>
             <div id="ubea-hero" class="js-fullheight"  data-section="home">
@@ -74,7 +71,8 @@ class Slide extends Component {
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/lCu5mlHFs5s    " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rtskhhhUri8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        {/* <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/lCu5mlHFs5s    " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                                     </div>
                                 </div>
                             </div>

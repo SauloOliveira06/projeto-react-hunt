@@ -1,5 +1,24 @@
 import React, { Component } from 'react';
 
+let cardImg1 = 'arquivos-layout/images/banner-consultoria.jpg'
+var card1  = {
+    background: `url(${cardImg1}) round`
+}
+
+let cardImg2 = 'arquivos-layout/images/meetup.png'
+var card2  = {
+    background: `url(${cardImg2}) round`
+}
+
+let cardImg3 = 'arquivos-layout/images/cumprimento.jpg'
+var card3  = {
+    background: `url(${cardImg3}) round`
+}
+
+let cardImg4 = 'arquivos-layout/images/cursos.jpg'
+var card4  = {
+    background: `url(${cardImg4}) round`
+}
 class SessaoServicos extends Component {
     render(){
         return(
@@ -16,7 +35,7 @@ class SessaoServicos extends Component {
             <div class="container">
                 <div class="container-cards1">
                     <div class="col-md-5 col-xs-12">
-                        <div class="card1">
+                        <div class="card1" style={ card1 }>
                             <a href="consultoria-empresarial.html">
                                 <div class="titulo1">
                                     <p>Consultoria Empresarial</p>
@@ -35,7 +54,7 @@ class SessaoServicos extends Component {
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
-                        <div class="card2">
+                        <div class="card2" style={ card2 }>
                             <a href="terceirizacao-temporarios.html">
                                 <div class="titulo2">
                                     <p>Terceirização e Temporários</p>
@@ -54,7 +73,7 @@ class SessaoServicos extends Component {
             <div class="container">
                 <div class="container-cards2">
                     <div class="col-md-5 col-xs-12">
-                        <div class="card3">
+                        <div class="card3" style={ card3 }>
                             <a href="consultoria-rh.html">
                                 <div class="titulo3">
                                     <p>Consultoria de RH</p>
@@ -73,7 +92,7 @@ class SessaoServicos extends Component {
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
-                        <div class="card4">
+                        <div class="card4" style={ card4 }>
                             <a href="educacao-corporativa.html">
                                 <div class="titulo4">
                                     <p>Educação Corporativa</p>

@@ -474,7 +474,6 @@
     color: #fff;
 }
 .card1{
-    /*background-image: url(../public/arquivos-layout/images/banner-consultoria.jpg); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -496,7 +495,6 @@
     border-radius: 5px;
 }
 .card2{
-    /*background-image: url(../public/arquivos-layout/images/meetup.png); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -519,7 +517,6 @@
     border-radius: 5px;
 }
 .card3{  
-    /*background-image: url(../public/arquivos-layout/images/cumprimento.jpg); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
@@ -542,7 +539,6 @@
     border-radius: 5px;
 }
 .card4{
-   /* background-image: url(../public/arquivos-layout/images/cursos.jpg); */
     background-size: cover;
     padding: 0 0 0 0;
     position: relative;
