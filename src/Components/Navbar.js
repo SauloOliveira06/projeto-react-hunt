@@ -1,5 +1,19 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { withRouter } from 'react-router-dom'
 
+const routes = [
+    {
+      path: "/App",
+      sidebar: () => <li><a>Início</a></li>,
+    },
+    {
+      path: "/sobre",
+      sidebar: () => <li><a>Sobre</a></li>,
+    },
+  ];
+
+  
 class Navbar extends Component {
     render() {
         return (
@@ -13,10 +27,22 @@ class Navbar extends Component {
                             </div>
                             <div class="col-lg-7 col-md-7 menu-1    main-nav teste1">
                                 <ul>
-                                    <li><a>Início</a></li>
+                                {/* <Link to="/App">Ir para a página sobre \o/</Link>
+                                    {routes.map((route, index) => (
+                                        <Route
+                                        key={index}
+
+                                        path={route.path}
+                                        exact={route.exact}
+                                        component={route.sidebar}
+                                        />
+                                    ))}
+                                     */}
+                                    <li><a href={'/App/' } >Início</a></li>
                                     <li><a>Sobre</a></li>
                                     <li><a href="#">Serviços<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul id="submenu" class="has-dropdown">
+                                        
                                             <li><a>Consultoria Empresarial</a></li>
                                             <li><a>Terceirização e Temporários</a></li>
                                             <li><a>Consultoria de RH</a></li>
@@ -67,9 +93,33 @@ class Navbar extends Component {
                     </div>
                 </div>
             </div>
+            <div style={{ flex: 1, padding: "10px" }}>
+          {routes.map((route, index) => (
+            // Render more <Route>s with the same paths as
+            // above, but different components this time.
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              component={route.main}
+            />
+          ))}
         </div>
+        </div>
+
         );
     }
 }
 
 export default Navbar
+
+// const mapStateToProps = state => {
+//     return {
+//       user: state.user
+//     };
+//   };
+
+
+// export default withRouter(connect(
+//   mapStateToProps,
+// )(Navbar))
