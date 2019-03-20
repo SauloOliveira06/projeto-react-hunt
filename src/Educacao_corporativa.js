@@ -344,21 +344,6 @@ class Educacao_corporativa extends Component {
                 </div>
             </div>
             </section> 
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <Footer/>
         </div>
         );
