@@ -1,5 +1,3 @@
-import { creatClient } from 'contentful';
-
 const contentful = require('contentful');
 
 const client = contentful.createClient({

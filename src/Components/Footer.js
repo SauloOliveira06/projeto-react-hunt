@@ -11,7 +11,7 @@ class Footer extends Component {
               <div class="row">
                 <div class="col-md-12">
                   <div class="logo-rodape">
-                    <img src="assets/images/logo-hunt.svg"/>
+                    <img src="assets/images/logo-hunt.svg" alt=""/>
                   </div>
                 </div>
               </div>
