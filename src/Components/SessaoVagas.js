@@ -1,6 +1,20 @@
 import React, {Component} from 'react';
+import client from './Client';
 
 class SessaoVagas extends Component {
+    
+    constructor(){
+      super()
+      this.state = { titulo_vagapage: []}
+    }
+
+    componentDidMount(){
+      client.getEntries({
+          'content_type' : 'tituloVagas'
+      }).then( (entries) => {
+          this.setState({titulo_vagapage: entries.items[0]})
+      })
+    }
   render(){
     return(
           /* ==========================
@@ -9,7 +23,11 @@ class SessaoVagas extends Component {
       <div>
         <div class="container">
           <div class="sessao-vagas col-md-6 col-lg-6 col-xs-6 col-sm-12">
-            Vagas
+            {this.state.titulo_vagapage.length === 0 ?
+              <div>Carregando</div>
+              :
+              <p>{this.state.titulo_vagapage.fields.tituloVagas}</p>
+            }
           </div>
         </div>
     

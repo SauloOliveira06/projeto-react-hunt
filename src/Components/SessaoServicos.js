@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import client from './Client';
 
 let cardImg1 = 'arquivos-layout/images/banner-consultoria.jpg'
 var card1  = {
@@ -20,13 +21,31 @@ var card4  = {
     background: `url(${cardImg4}) round`
 }
 class SessaoServicos extends Component {
+    
+    constructor(){
+        super()
+        this.state = { titulo_seguimentospage: []}
+    }
+
+    componentDidMount(){
+        client.getEntries({
+            'content_type' : 'tituloSeguimentos'
+        }).then( (entries) => {
+            this.setState({titulo_seguimentospage: entries.items[0]})
+        })
+    }
+
     render(){
         return(
-<div>
+    <div>
         <div class="container">
             <div class="titulo-seguimentos">
                 <div class="col-md-6 col-lg-6 col-xs-6 col-sm-12">
-                    <p>Nossos seguimentos</p>
+                    {this.state.titulo_seguimentospage.length === 0 ?
+                        <div>Carregando</div>
+                        :
+                        <p>{this.state.titulo_seguimentospage.fields.tituloSeguimentos}</p>
+                    }
                 </div>
             </div>
         </div>
