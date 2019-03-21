@@ -33,8 +33,6 @@ class Terceirizacao_temporarios extends Component {
     render() {
         return (
         <div>
-            <Navbar />
-            
             <div class="banner-terceirizacao" style={ banner }>
                 <div class="container col-md-9">
                     <div class="texto-banner">
@@ -272,16 +270,6 @@ class Terceirizacao_temporarios extends Component {
                 </div>
             </div>
             </div>
-
-
-
-
-
-
-
-
-
-            <Footer/>
         </div>
         );
     }

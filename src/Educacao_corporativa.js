@@ -30,9 +30,6 @@ class Educacao_corporativa extends Component {
     render() {
         return (
         <div>
-            <Navbar />
-            
-
             <div class="banner-edu-corporativa" style={ banner }>
             <div class="container col-md-9">
                 <div class="texto-banner">
@@ -344,7 +341,6 @@ class Educacao_corporativa extends Component {
                 </div>
             </div>
             </section> 
-            <Footer/>
         </div>
         );
     }
