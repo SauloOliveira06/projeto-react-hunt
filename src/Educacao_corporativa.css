@@ -1,0 +1,409 @@
+/* SESSAO BANNER - Educacao Corporativa */
+.banner-edu-corporativa {
+    background-repeat: no-repeat;
+    /*background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+}
+
+.banner-edu-corporativa::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(133, 89, 165, 0.6);
+}
+
+.texto-banner {
+    /* texto - conteudo do banner consultoria*/
+    font-family: Nunito, sans-serif;
+    position: absolute;
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #fff;
+    padding-top: 3%;
+}
+
+
+
+/* SESSAO CONTEUDO EDU CORPORATIVO */
+.titulo-corporativo1,
+.titulo-corporativo2,
+.titulo-corporativo3 {
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #484b4d;
+    /*position: relative;*/
+    margin-left: 7%;
+}
+
+.titulo-corporativo1 {
+    margin-top: 117px;
+    padding-bottom: 30px;
+    margin-left: 7%;
+}
+
+.titulo-corporativo2 {
+    padding-top: 60px;
+    padding-bottom: 30PX;
+    margin-left: 7%;
+}
+
+.titulo-corporativo3 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-left: 7%;
+}
+
+.conteudo-corporativo1,
+.conteudo-corporativo2,
+.conteudo-corporativo3 p {
+    width: 900px;
+    height: 76px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #484b4d;
+    margin-left: 7%;
+}
+
+/* SESSAO ATUACAO */
+.sessao-atuacao {
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    padding: 183px 0 79px 7%;
+}
+
+/* BTN CONTRATE NOSSOS SERVICOS*/
+.btn-contrate-servicos {
+    width: 335px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(244, 134, 59, 0.88);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-contrate-servicos a {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-btn-servicos {
+    display: flex;
+    justify-content: center;
+    padding: 110px 0 67px;
+
+}
+
+.btn-contrate-servicos:hover {
+    background-color: #fc4747;
+    transition: 0.5s;
+}
+
+.flex-container {
+    /* EBOOK CONTAINER */
+    display: flex;
+    align-items: center;
+    height: 350px;
+}
+
+.flex-container .conteudo h3 {
+    color: #d11818;
+}
+
+/* SESSAO - CARDVIEWS */
+.container-card {
+    /* manipula todo o card - tananho etc */
+    position: relative;
+    width: 220px;
+    height: 310px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.image {
+    /* manipula a imagem */
+    display: block;
+    width: auto;
+    /* define tamanho total da imagem - use porcentagem */
+    height: auto;
+    transform: translate(45%, 55%);
+}
+
+.overlay {
+    /* controla o deslize da div hover para o topo */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8559a5;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    /* tamanho absoluto da partida para o top */
+    transition: .5s ease;
+}
+
+.container-card:hover .overlay {
+    /* tamanho até o topo do card */
+    height: 100%;
+}
+
+.titulo {
+    padding: 10% 0 0 10%;
+    position: absolute;
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.titulo::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: #6b3e8c;
+    bottom: -30px;
+    /* espaço do sublinhado para o titulo*/
+}
+
+.text-conteudo {
+    width: 96%;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+
+    line-height: 1.40;
+
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    padding: 35% 0 0 10%;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* SESSAO NOSSOS CURSOS */
+.sessao-cursos {
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;  
+    padding-bottom: 79px;
+    padding-left: 7%
+  }
+
+  /* SESSAO CURSOS */
+.img-cursos-card{
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-cursos-card img{
+    width: 100%;
+    height: 220px;
+  }
+  
+  .card-cursos{
+    background-color: #8559a5;
+    width: 100%;
+    height: 60px;
+  }
+    
+  .card-cursos h5{
+    color: #fff;
+    font-family: Nunito, Arial, Roboto, sans-serif;
+    
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    
+    text-align: left;
+    margin: 20px;
+  }
+  
+  /* SESSAO - LISTA DE CURSOS */
+  .container-cursos{
+    width: 73%;
+  }
+  .card-cursos::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #6b3e8c;
+    bottom: -4px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  .img-icon-card{
+    background-color: #fff;
+    width: 200px;
+    height: 250px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    
+  }
+  
+  .img-icon-card img{
+    width: 115px;
+    height: 115px;
+  }
+
+
+  /* --- ======= SESSAO COMENTARIOS - Edu Corp ========= ---------*/
+
+.sessao-depoimentos{
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    padding: 108px 0 79px;
+    padding-left: 7%;
+  }
+  
+  #sessao-comentarios{
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 183px;
+  }
+  
+  .container-comentarios1{
+    padding-left: 7%;
+    margin-bottom: 3%;
+  }
+  .container-comentarios2{
+    padding-left: 7%;  
+  }
+  
+  .card-comentario1{ 
+    width: 45%;
+  }
+  
+  .card-comentario2{
+    width: 45%; 
+  }
+  .card-comentario3{ 
+    width: 45%;
+  }
+  
+  .card-comentario4{
+    width: 45%; 
+  }
+  
+  .bloco-foto{
+    width: 110px;
+    height: 110px;
+    margin-right: 2%;
+    float: left;
+  }
+  .bloco-foto img{
+    bottom: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .bloco-comentario{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d384d;
+  }
+  
+  .bloco-comentario b{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d384d;
+  }

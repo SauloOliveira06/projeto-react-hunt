@@ -1,0 +1,397 @@
+
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+  /* SESSAO BANNER - Educacao Corporativa */
+  .banner-sobre{
+    /*background-attachment: fixed;*/
+    background-position: center; 
+    background-size: cover;
+    padding: 0 0 0 0;   
+    position: relative;
+    width: 100%;
+    height: 600px;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-sobre::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(252, 71, 71, 0.6);
+  }
+  .texto-banner {
+    padding-top: 5%;
+  }
+  .texto-banner p{ /* texto - conteudo do banner consultoria*/
+    font-family: Nunito, sans-serif;
+    position: absolute;
+    font-weight: 700;      
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #fff;
+    
+  }
+  
+  .background-sobre{
+    background-color: #fc4747;
+    height: auto;
+  }
+  .img-hunt{
+    float: left;
+    position: relative;
+    padding-left: 8%;
+  }
+  .img-hunt img{
+    max-width: 90%;
+  }
+  .matriz{
+    background-color: #fff;
+    width: 170px;
+    height: 60px;
+    border-radius: 5px;
+    float: left;
+    padding: 2%;
+  }
+  .matriz h5{
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #484b4d;
+    position: relative;
+    
+  }
+  .endereco{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .endereco h5{
+    color: #fff;
+    font-family: Roboto, sans-serif;
+  
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 9%;
+  }
+  .contato{
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 5%;
+  }
+  .contato h5{
+    color: #fff;
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 5%;
+  }
+  .email{
+    display: flex;
+    flex-direction: row;      
+  }
+  .email h5{
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 5%;
+  }
+  .div-informacoes{
+    transform: translate(10%,10%);
+    width: 320px;  
+  }
+  .fa-map-marker{
+    font-size: 40px;
+  }
+  .fa-map-marker{
+    color: #fff;
+  }
+  .fa-phone{
+    color: #fff;
+  }
+  .fa-envelope{
+    color: #fff;
+  }
+  .fa-icons{
+    display: flex;
+    margin-top: 20%;
+  }
+  
+  
+  @media(min-width: 360px) and (max-width: 640px){
+    .card-nome{
+      transform: translate(0%,0%);
+      width: 200px;
+      height: auto;
+    }
+    .card-nome-left{
+      transform: translate(0%,0%);
+      width: 200px;
+      height: auto;
+    }
+    .card-nome-left h5{
+      font-size: 20px;
+    }
+    .card-nome h5{
+      font-size: 20px;
+    }
+    .card-nome::before{
+      display: none;
+    }
+    .card-nome-left::before{
+      display: none;
+    }
+    .div-informacoes h5{
+      margin-left: 2%;
+    }
+    .div-informacoes{
+      transform: translate(0%, 0%);
+    }
+    .img-hunt img{
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 568px){
+    .card-nome{
+      transform: translate(0%,0%);
+      width: 200px;
+      height: auto;
+    }
+    .card-nome-left{
+      transform: translate(0%,0%);
+      width: 200px;
+      height: auto;
+    }
+    .card-nome-left h5{
+      font-size: 20px;
+    }
+    .card-nome h5{
+      font-size: 20px;
+    }
+    .card-nome::before{
+      display: none;
+    }
+    .card-nome-left::before{
+      display: none;
+    }
+    .div-informacoes{
+      margin-top: 4%;
+      margin-left: 4%;
+      transform: translate(0%, 0%);
+    }
+    .div-informacoes h5{
+      margin-left: 2%;
+    }
+    .sessao-sobre{
+      margin-bottom: 15%;
+    }
+    .conteudo-sobre p{
+      font-size: 18px;
+    }
+    .logo-rodape{
+      margin-bottom: 5%;
+      margin-left: 7%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px){
+    .img-hunt img{
+      max-width: 100%;
+    }
+    
+    .card-nome h5{
+      font-size: 20px;
+    }
+    .card-nome-left h5{
+      font-size: 20px;
+    }
+    .background-sobre{
+      height: 700px;
+    }
+  }
+
+
+  /* SESSAO - CARD EQUIPE HUNT */
+
+.sessao-equipe{
+    padding-top: 5%;
+}
+.sessao-equipe p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    padding-left: 7%
+}
+.card-nome h5{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;   
+}
+.card-nome{
+    position: relative;
+    background-color: #fc4747;
+    border-radius: 2px;
+    width: 35%;
+    height: 60px;
+    padding: 1% 0 0 2%;
+    transform: translate(160%,-50%);
+}
+    
+.card-nome-left h5{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.card-nome-left{
+    position: relative;
+    background-color: #fc4747;
+    border-radius: 2px;
+    width: 35%;
+    height: 60px;
+
+    padding: 1% 0 0 2%;
+}
+
+/* complementares para o estilo restante */
+    
+.card {
+    border-radius:0;
+    margin:10px auto;
+    border-style: none; /* retira filedset */
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    margin-bottom: 180px;
+  }
+  .card:hover{
+    transition-duration: 0.5s;  
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+  .card b{
+    color: #fc4747;
+  }
+  .card-title {
+    text-transform: uppercase;
+    color: #E44424;
+  }
+  .card-text {
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color:#FFFFFF;
+    color:#000000;
+  }
+  .card-text{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+
+  /* SESSAO SOBRE NOS*/
+.sessao-sobre{
+    padding: 113px 0 30px 7%;
+}
+.sessao-sobre p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+.conteudo-sobre{
+    width: 90%;
+}
+  
+.conteudo-sobre p{ /* referencia edu corporativa */  
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.70;
+    letter-spacing: normal;
+    text-align: left;
+    color: #484b4d;
+    padding-left: 8%;
+    padding-bottom: 3%;
+}

@@ -1,0 +1,404 @@
+/* SESSAO BANNER - CONSULTORIA RH */
+.banner-terceirizacao{
+    background-repeat: no-repeat;
+    /*background-attachment: fixed; */
+    background-position: center; 
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-terceirizacao::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(252, 71, 71, 0.6) !important;
+  }
+  
+  .texto-banner { /* texto - conteudo do banner consultoria*/
+    font-family: Nunito, sans-serif;
+    position: absolute;
+    font-weight: 700;      
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #fff;
+  
+    padding-top: 3%;
+    
+  }
+
+
+  .sessao-servicos {
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    padding: 11px 0 79px 13%;
+  }
+
+  /* CARDVIEWS */
+.container-card { /* manipula todo o card - tananho etc */
+    position: relative;
+    width: 220px;
+    height: 310px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+      background-color: #ffffff;
+  }
+  .image { /* manipula a imagem */
+      display: block;
+      width: auto; /* define tamanho total da imagem - use porcentagem */
+      height: auto;
+      transform: translate(45%, 55%);
+  }
+  
+  .overlay { /* controla o deslize da div hover para o topo */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fc4747;
+    overflow: hidden;
+    width: 100%;
+    height: 25%; /* tamanho absoluto da partida para o top */
+    transition: .5s ease;
+  }
+  
+  .container-card:hover .overlay { /* tamanho até o topo do card */
+    height: 100%;
+  }
+  
+  .titulo{
+    padding: 10% 0 0 10%;
+    position: absolute;
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .titulo::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: #e32929;
+    bottom: -30px; /* espaço do sublinhado para o titulo*/
+  }
+  .text-conteudo{
+    width: 96%;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    
+    line-height: 1.40;
+  
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    padding: 35% 0 0 10%;
+  }
+  .text-conteudo-diag{
+    width: 96%;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    
+    line-height: 1;
+  
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    padding: 36% 0 0 10%;
+  }
+  .text-conteudo-coach{
+    width: 96%;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    
+    line-height: 1.27;
+  
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    padding: 35% 0 0 10%;
+  }
+  .text-conteudo-asses{
+    width: 96%;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    
+    line-height: 1.27;
+  
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    padding: 35% 0 0 10%;
+  }
+  .card-body{
+    display: flex;
+    justify-content: center;
+  }
+  .card-body2{
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+  }
+  #pesquisa{
+    font-size: 16px;
+  }
+  #plano{
+    font-size: 16px;
+  }
+  #avaliacao{
+    font-size: 16px;
+  }
+  #diagnostico{
+    padding: 10% 0 0 10%;
+    position: absolute;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #fff;
+    transform: translateY(5%);
+  }
+  /* FIM CARDSVIEWS */
+  
+  .conteudo-recrutamento{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4d4d4d;
+    text-indent: 2%;
+    padding: 80px 0 111px;
+  
+  }
+  .conteudo-recrutamento li{
+    list-style: none;
+  }
+  
+  /* BTN CONTRATE NOSSOS SERVICOS*/
+  .btn-contrate-servicos{
+    width: 335px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(244, 134, 59, 0.88);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .btn-contrate-servicos a{
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;  
+
+    text-decoration: none;
+  }
+  .container-btn-servicos{
+    display: flex;
+    justify-content: center;
+    padding: 110px 0 67px;
+    
+  }
+  .btn-contrate-servicos:hover{
+    background-color: #fc4747;
+    transition: 0.5s;
+  }
+  
+  /* SESSAO SERVICOS - CONSULTORIA EMPRESARIAL */
+
+.conteudo-recrutamento{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4d4d4d;
+    text-indent: 3%;
+    padding: 80px 0 111px;
+}
+.conteudo-recrutamento li{
+    list-style: none;
+}
+.sessao-recrutamento p{
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    margin: 116.5px 0 100px 7%;;
+}
+  
+.sessao-servicos {
+    position: relative;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #4d4d4d;
+    padding: 11px 0 79px;
+}
+  
+.conteudo-titulo h5{
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4d4d4d;
+}
+.infografo-img{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 7%;
+}
+.infografo-img img{
+    height: auto;
+    width: 90%;
+    object-fit: contain;
+}
+
+/* ----- SESSAO EBOOK ---*/
+.flex-container{ /* EBOOK CONTAINER */
+    display: flex;
+    align-items: center;
+    height: 350px;
+  }
+  .flex-container .conteudo h3{
+    color: #fc4747;
+  }
+  .ebook-background{
+    background-size: cover;
+    padding: 0 0 0 0;
+    position: relative;
+  }
+  .ebook-background::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(84, 151, 211, 0.6); 
+  }
+  .ebook-background .container {
+    position: relative; 
+  }
+  
+  .modal-header{
+    border-radius: 0px;
+  }
+  
+  .flex-conteudo-ebook p{
+    font-family: Nunito, sans-serif;
+    width: 479px;
+    height: 104px;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .botao-baixar-ebook{
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+   
+    border-radius: 25px;
+    transition: 0.4s;
+   
+    color: #fff;
+    background: #f4863b;/* #18d26e; */
+    width: 271px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration:none;
+    list-style: none;
+  }
+  
+  .botao-baixar-ebook:hover{
+    background: #fc4747;
+    color: #fff;
+    text-decoration:none;
+    list-style: none;
+  }
