@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 let slide1 = 'arquivos-layout/images/cumprimento.jpg'
 var style1  = {
     background: `url(${slide1}) round`
