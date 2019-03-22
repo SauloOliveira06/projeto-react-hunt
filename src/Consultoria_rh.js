@@ -37,7 +37,6 @@ class Consultoria_rh extends Component {
     render() {
         return (
         <div>
-            <Navbar />
             <div class="banner-terceirizacao" style={ banner }>
             <div class="container col-md-9">
                 <div class="texto-banner">
@@ -291,10 +290,6 @@ class Consultoria_rh extends Component {
                 </div>
             </div>
             </div>
-
-
-
-            <Footer/>
         </div>
         );
     }

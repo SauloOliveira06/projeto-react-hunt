@@ -32,7 +32,7 @@ class About extends Component {
     console.log('render')
     return (
       <div>
-        <Navbar />
+
         <Banner />
 
         {/* SESSAO AREA DE ATUACAO */}
@@ -168,7 +168,7 @@ class About extends Component {
 
 
         
-        <Footer/>
+
       </div>
 
     );

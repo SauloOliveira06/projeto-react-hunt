@@ -24,14 +24,24 @@ class SessaoServicos extends Component {
     
     constructor(){
         super()
-        this.state = { titulo_seguimentospage: []}
+        this.state = { 
+            titulo_seguimentos: [],
+            titulo_card1: [],
+            titulo_card2: [],
+            titulo_card3: [],
+            titulo_card4: []
+        }
     }
 
     componentDidMount(){
         client.getEntries({
             'content_type' : 'tituloSeguimentos'
         }).then( (entries) => {
-            this.setState({titulo_seguimentospage: entries.items[0]})
+            this.setState({titulo_seguimentos: entries.items[0]})
+            this.setState({titulo_card1: entries.items[0]})
+            this.setState({titulo_card2: entries.items[0]})
+            this.setState({titulo_card3: entries.items[0]})
+            this.setState({titulo_card4: entries.items[0]})
         })
     }
 
@@ -41,10 +51,10 @@ class SessaoServicos extends Component {
         <div class="container">
             <div class="titulo-seguimentos">
                 <div class="col-md-6 col-lg-6 col-xs-6 col-sm-12">
-                    {this.state.titulo_seguimentospage.length === 0 ?
+                    {this.state.titulo_seguimentos.length === 0 ?
                         <div>Carregando</div>
                         :
-                        <p>{this.state.titulo_seguimentospage.fields.tituloSeguimentos}</p>
+                        <p>{this.state.titulo_seguimentos.fields.tituloSeguimentos}</p>
                     }
                 </div>
             </div>
@@ -57,7 +67,11 @@ class SessaoServicos extends Component {
                         <div class="card1" style={ card1 }>
                             <a href="consultoria-empresarial.html">
                                 <div class="titulo1">
-                                    <p>Consultoria Empresarial</p>
+                                {this.state.titulo_card1.length === 0 ?
+                                    <div>Carregando</div>
+                                    :
+                                    <p>{this.state.titulo_card1.fields.tituloCard1}</p>
+                                }
                                 </div>
                                 <ul>
                                     <li>• Planejamento estratégico;</li>
@@ -76,7 +90,11 @@ class SessaoServicos extends Component {
                         <div class="card2" style={ card2 }>
                             <a href="terceirizacao-temporarios.html">
                                 <div class="titulo2">
-                                    <p>Terceirização e Temporários</p>
+                                {this.state.titulo_card2.length === 0 ?
+                                    <div>Carregando</div>
+                                    :
+                                    <p>{this.state.titulo_card2.fields.tituloCard2}</p>
+                                }
                                 </div>  
                                 <ul>
                                     <li>• Fornecimento de mão de obra temporária;</li>
@@ -95,7 +113,11 @@ class SessaoServicos extends Component {
                         <div class="card3" style={ card3 }>
                             <a href="consultoria-rh.html">
                                 <div class="titulo3">
-                                    <p>Consultoria de RH</p>
+                                {this.state.titulo_card3.length === 0 ?
+                                    <div>Carregando</div>
+                                    :
+                                    <p>{this.state.titulo_card3.fields.tituloCard3}</p>
+                                }
                                 </div>
                                 <ul>
                                     <li>• Recrutamento e Seleção;</li>
@@ -114,7 +136,11 @@ class SessaoServicos extends Component {
                         <div class="card4" style={ card4 }>
                             <a href="educacao-corporativa.html">
                                 <div class="titulo4">
-                                    <p>Educação Corporativa</p>
+                                {this.state.titulo_card4.length === 0 ?
+                                    <div>Carregando</div>
+                                    :
+                                    <p>{this.state.titulo_card4.fields.tituloCard4}</p>
+                                }
                                 </div>
                                 <ul>
                                     <li>• Palestra Solidárias;</li>

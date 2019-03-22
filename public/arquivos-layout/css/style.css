@@ -379,7 +379,7 @@ a:hover, a:active, a:focus {
 li:hover ul#submenu {
   opacity: 1;
   top: 0; /* 40px ajustar isso de acordo com top pad pad top & bottom vem */
-  padding-top:54px; /* distancia do top para o dropdown */
+  padding-top:52px; /* distancia do top para o dropdown */
   visibility: visible;
 }
 .fa-angle-down{
@@ -2505,6 +2505,7 @@ form label {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
 }
 #ubea-hero .flexslider .flex-control-nav {
   bottom: 40px;

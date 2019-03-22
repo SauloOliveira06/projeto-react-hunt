@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
 import './App.css'
 import './Educacao_corporativa.css'
+
 import client from './Components/Client';
 
 let img = 'arquivos-layout/images/cursos.jpg'
 var banner  = {
     background: `url(${img}) repeat`
 }
-
-
-
 
 
 class Educacao_corporativa extends Component {
@@ -30,9 +26,6 @@ class Educacao_corporativa extends Component {
     render() {
         return (
         <div>
-            <Navbar />
-            
-
             <div class="banner-edu-corporativa" style={ banner }>
             <div class="container col-md-9">
                 <div class="texto-banner">
@@ -344,7 +337,6 @@ class Educacao_corporativa extends Component {
                 </div>
             </div>
             </section> 
-            <Footer/>
         </div>
         );
     }

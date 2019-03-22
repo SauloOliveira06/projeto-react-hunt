@@ -17,9 +17,9 @@ class SessaoVagas extends Component {
     }
   render(){
     return(
-          /* ==========================
-          Sessao VAGAS - Home
-          ============================ */
+    /* ==========================
+    Sessao VAGAS - Home
+    ============================ */
       <div>
         <div class="container">
           <div class="sessao-vagas col-md-6 col-lg-6 col-xs-6 col-sm-12">
