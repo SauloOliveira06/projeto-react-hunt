@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+
 class Navbar extends Component {
     render() {
         return (
@@ -13,17 +14,13 @@ class Navbar extends Component {
                                         <Link to="/"> 
                                             <img src="arquivos-layout/images/logo-hunt.svg"/> 
                                         </Link> 
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-lg-7 col-md-7 ">
                                     <ul>
                                     <li><Link to="/">Início</Link></li>
-                                    <li><Link to="/sobre">Sobre</Link></li>
-                                    
+                                    <li><Link to="/sobre">Sobre</Link></li>          
                                     <li><a href="#">Serviços<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                     
-                                     
-                                     
                                         <ul id="submenu" class="has-dropdown">
                                             <li><Link to="/empresarial">Consultoria Empresarial</Link></li>
                                             <li><Link to="/terceirizacao_temporarios">Terceirização e Temporários</Link></li>
@@ -76,8 +73,6 @@ class Navbar extends Component {
                     </div>
                 </div>
             </div>
-
-
         );
     }
 }

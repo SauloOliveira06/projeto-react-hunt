@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import client from './Client';
 
 let slide1 = 'arquivos-layout/images/cumprimento.jpg'
 var style1  = {
@@ -21,6 +21,20 @@ var style4  = {
     background: `url(${slide4}) round` 
 }
 class Slide extends Component {
+
+    constructor(){
+        super()
+        this.state = { texto_slidepage: []}
+    }
+
+    componentDidMount(){
+        client.getEntries({
+            'content_type' : 'textoSlide'
+        }).then( (entries) => {
+            this.setState({texto_slidepage: entries.items[0]})
+        })
+    }
+
     render(){
         return(
             <div>
@@ -32,7 +46,11 @@ class Slide extends Component {
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <h2>Soluções customizadas <br/>para pessoas e negócios.</h2>
+                                        {this.state.texto_slidepage.length === 0 ?
+                                            <div>Carregando</div>
+                                            :
+                                            <p>{this.state.texto_slidepage.fields.textoSlide}</p>
+                                        }
                                         <button type="button" class="btn btn-slide" href="#">
                                             <p>Veja nossos serviços</p>
                                         </button>
@@ -71,8 +89,7 @@ class Slide extends Component {
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rtskhhhUri8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        {/* <iframe width="660" height="400" id="youtube" src="https://www.youtube.com/embed/lCu5mlHFs5s    " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wuwLfebuKpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
