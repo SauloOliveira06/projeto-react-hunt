@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'
 let cardImg1 = 'arquivos-layout/images/banner-consultoria.jpg'
 var card1  = {
     background: `url(${cardImg1}) round`
@@ -36,7 +36,7 @@ class SessaoServicos extends Component {
                 <div class="container-cards1">
                     <div class="col-md-5 col-xs-12">
                         <div class="card1" style={ card1 }>
-                            <a href="consultoria-empresarial.html">
+                            <Link to="/empresarial">
                                 <div class="titulo1">
                                     <p>Consultoria Empresarial</p>
                                 </div>
@@ -50,12 +50,12 @@ class SessaoServicos extends Component {
                                     <li>• Endomarketing.</li>
                                     <img src="arquivos-layout/images/simbolo1.svg"/>
                                 </ul>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
                         <div class="card2" style={ card2 }>
-                            <a href="terceirizacao-temporarios.html">
+                            <Link to="/terceirizacao_temporarios">
                                 <div class="titulo2">
                                     <p>Terceirização e Temporários</p>
                                 </div>  
@@ -64,7 +64,7 @@ class SessaoServicos extends Component {
                                     <li>• Soluções na terceirização de serviços nas áreas: de Suporte ou Produtivas.</li>
                                     <img src="arquivos-layout/images/simbolo2.svg"/>
                                 </ul>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ class SessaoServicos extends Component {
                 <div class="container-cards2">
                     <div class="col-md-5 col-xs-12">
                         <div class="card3" style={ card3 }>
-                            <a href="consultoria-rh.html">
+                            <Link to="/consultoria_rh">
                                 <div class="titulo3">
                                     <p>Consultoria de RH</p>
                                 </div>
@@ -88,12 +88,12 @@ class SessaoServicos extends Component {
                                     <li>• Recolocação.</li>
                                     <img src="arquivos-layout/images/simbolo3.svg"/>
                                 </ul>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12">
                         <div class="card4" style={ card4 }>
-                            <a href="educacao-corporativa.html">
+                            <Link to="/educacao_corporativa">
                                 <div class="titulo4">
                                     <p>Educação Corporativa</p>
                                 </div>
@@ -106,7 +106,7 @@ class SessaoServicos extends Component {
                                     <li>• Locação de Ambiente para Eventos.</li>
                                     <img src="arquivos-layout/images/simbolo4.svg"/>
                                 </ul>
-                            </a>
+                            </Link>
                         </div>  
                     </div>
                 </div>
