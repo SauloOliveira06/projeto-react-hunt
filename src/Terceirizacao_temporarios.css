@@ -1,19 +1,16 @@
 
 .banner-terceirizacao{
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center; 
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important; 
+    background-size: cover !important;
     padding: 0 0 0 0;
     position: relative;
-    width: 100%;
-    height: 600px;
-  
+    width: 100vw;
+    height: 63.5vh !important;
     display: flex;
     align-items: center;
-  
     padding-top: 7%;
-    
   }
   
   .banner-terceirizacao::before { /* filtro */

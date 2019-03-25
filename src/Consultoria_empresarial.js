@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
 import './App.css'
 import './Consultoria_empresarial.css'
 
@@ -8,7 +6,7 @@ import './Consultoria_empresarial.css'
 
 let img = 'arquivos-layout/images/banner-consultoria.jpg'
 var banner  = {
-    background: `url(${img}) round`
+    background: `url(${img})`
 }
 
 
@@ -19,21 +17,6 @@ var ebook  = {
 
 
 function Consultoria_empresarial() {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     names: []
-  //   }
-  //   this.removeName = this.removeName.bind(this)
-  //   console.log('Constructor')
-  // }
-
-  // removeName(nameRemoved) {
-  //   console.log(nameRemoved);
-  //   this.setState((state) => ({
-  //     names: state.names.filter(name => name !== nameRemoved)
-  //   }))
-  // }
     return (
       <div>
       <div class="banner-consultoria" style={ banner }>

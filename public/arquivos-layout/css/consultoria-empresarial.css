@@ -312,17 +312,7 @@ h6 {
   transform: translate(45%, 55%);
 }
 
-.overlay { /* controla o deslize da div hover para o topo */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f4863b;
-  overflow: hidden;
-  width: 100%;
-  height: 25%; /* tamanho absoluto da partida para o top */
-  transition: .5s ease;
-}
+
 
 .container-card:hover .overlay { /* tamanho até o topo do card */
   height: 100%;

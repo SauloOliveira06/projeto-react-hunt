@@ -13,7 +13,7 @@ var banner  = {
 
 let img1 = 'arquivos-layout/images/back-cafe.jpg'
 var ebook  = {
-    background: `url(${img1}) round`
+    background: `url(${img1})`
 }
 
 

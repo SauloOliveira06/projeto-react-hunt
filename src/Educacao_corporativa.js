@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
 import './App.css'
 import './Educacao_corporativa.css'
 import client from './Components/Client';
 
 let img = 'arquivos-layout/images/cursos.jpg'
 var banner  = {
-    background: `url(${img}) repeat`
+    background: `url(${img})`
 }
-
-
-
-
-
 class Educacao_corporativa extends Component {
     constructor(){
         super()
