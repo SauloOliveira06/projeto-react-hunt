@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-// import List from './Components/List';
-// import Title from './Components/Title';
-import Navbar from './Components/Navbar';
 import Banner from './Components/Banner';
-import Footer from './Components/Footer';
-import Frase from './Components/Frase';
-import SessaoServicos from './Components/SessaoServicos';
-import './App.css'
 import './About.css'
 class About extends Component {
 

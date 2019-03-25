@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
 import './App.css'
 import './Terceirizacao_temporarios.css'
 import client from './Components/Client';
@@ -8,7 +6,8 @@ import client from './Components/Client';
 
 let img = 'arquivos-layout/images/about_plan.jpg'
 var banner  = {
-    background: `url(${img}) round`
+    background: `url(${img})`
+
 }
 
 let img1 = 'arquivos-layout/images/back-cafe.jpg'
