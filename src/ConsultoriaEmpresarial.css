@@ -1,125 +1,152 @@
+/* =====================================
+ESTILO - PAGINA - CONSULTORIA EMPRESARIAL
+====================================== */
+
 /* SESSAO BANNER - CONSULTORIA EMPRESARIAL */
 .banner-consultoria{
-    /* background-image: url(../../../assets/images/banner-consultoria.jpg); */
-    background-repeat: no-repeat;
-    /*background-attachment: fixed; */
-    background-position: center;
-    background-size: cover;
-    padding: 0 0 0 0;
-    position: relative;
-    width: 100%;
-    height: 600px;
+  /* background-image: url(../../../assets/images/banner-consultoria.jpg); */
+  background-repeat: no-repeat;
+  /*background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  padding: 0 0 0 0;
+  position: relative;
+  width: 100%;
+  height: 600px;
 
-    display: flex;
-    align-items: center; 
-  }
+  display: flex;
+  align-items: center; 
+}
   
-  .banner-consultoria::before { /* filtro laranja */
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(244, 134, 59, 0.6);
-  }
+.banner-consultoria::before { /* filtro laranja */
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(244, 134, 59, 0.6);
+}
   
-  .texto-banner { /* texto - conteudo do banner consultoria*/
-    font-family: Nunito, sans-serif;
-    position: absolute;
-    font-weight: 700;      
-    padding-bottom: 15px;
-    font-size: 40px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.04;
-    letter-spacing: 2.4px;
-    text-align: left;
-    color: #fff;
-    width: 100%;
-  
-  }
+.texto-banner { /* texto - conteudo do banner consultoria*/
+  font-family: Nunito, sans-serif;
+  position: absolute;
+  font-weight: 700;      
+  padding-bottom: 15px;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: 2.4px;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+}
 
+/* ============= SESSAO FRASE ========== */
+.conteudo-frase{
+  width: 100%;
+  padding: 7% 0 0 20%;
+  position: absolute;
+}  
+.conteudo-frase p{
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #4d4d4d;
 
-  /* ----- SESSAO EBOOK ---*/
+  width: 75%;
+
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.container-frase-home{
+  height: 300px;
+  background-color: #f2f2f2;
+  margin-bottom: 108px; 
+}
+
+/*  SESSAO EBOOK */
 .flex-container{ /* EBOOK CONTAINER */
-    display: flex;
-    align-items: center;
-    height: 350px;
-  }
-  .flex-container .conteudo h3{
-    color: #fc4747;
-  }
-  .ebook-background{
-    /* background: url("../../../assets/images/back-cafe.jpg") center top no-repeat; */
-    background-size: cover;
-    padding: 0 0 0 0;
-    position: relative;
-  
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-    
-    width: 100%;
-    max-width: 100%;
-  }
-  .ebook-background::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(84, 151, 211, 0.6); 
-  }
-  
-  
-  .flex-conteudo-ebook p{
-    font-family: Nunito, sans-serif;
-    width: 479px;
-    height: 104px;
-    font-size: 32px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.25;
-    letter-spacing: 2px;
-    text-align: left;
-    color: #ffffff;
-  }
-  .botao-baixar-ebook{
-    font-family: Nunito, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 1px;
-    
-   
-    border-radius: 25px;
-    transition: 0.4s;
-   
-    color: #fff;
-    background: #f4863b;/* #18d26e; */
-    width: 271px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    text-decoration:none;
-    list-style: none;
-  }
-  
-  .botao-baixar-ebook:hover{
-    background: #fc4747;
-    color: #fff;
-    text-decoration:none;
-    list-style: none;
-  }
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
+.flex-container .conteudo h3{
+  color: #fc4747;
+}
+.ebook-background{
+  /* background: url("../../../assets/images/back-cafe.jpg") center top no-repeat; */
+  background-size: cover;
+  padding: 0 0 0 0;
+  position: relative;
 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  
+  width: 100%;
+  max-width: 100%;
+}
+.ebook-background::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(84, 151, 211, 0.6); 
+}
+
+.flex-conteudo-ebook p{
+  font-family: Nunito, sans-serif;
+  width: 479px;
+  height: 104px;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #ffffff;
+}
+.botao-baixar-ebook{
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  transition: 0.4s;
+  
+  color: #fff;
+  background: #f4863b;/* #18d26e; */
+  width: 271px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-decoration:none;
+  list-style: none;
+}
+
+.botao-baixar-ebook:hover{
+  background: #fc4747;
+  color: #fff;
+  text-decoration:none;
+  list-style: none;
+}
 
 /* CARDVIEWS */
-
 /* SESSAO SERVICOS - CONSULTORIA EMPRESARIAL */
 .sessao-servicos {
   position: relative;
@@ -259,6 +286,8 @@
   background-color: #fc4747;
   transition: 0.5s;
 }
+
+
 
   
   /* ============ OUTROS ARQUIVOS NECESSÁRIOS - CSS ================= */
@@ -2170,33 +2199,3 @@
     color: #FF5126;
     font-size: 22px;
   }
-
-  .conteudo-frase{
-  width: 100%;
-  padding: 7% 0 0 20%;
-  position: absolute;
-  
-}  
-.conteudo-frase p{
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 1.6px;
-  text-align: left;
-  color: #4d4d4d;
-  
-  width: 75%;
-
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-.container-frase-home{
-  height: 300px;
-  background-color: #f2f2f2;
-  margin-bottom: 108px; 
-}

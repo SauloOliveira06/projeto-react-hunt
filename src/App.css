@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .App {
   text-align: center;
 }
@@ -34,19 +35,250 @@
   }
 }
 
+.modal-content{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.modal-title{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 26px;
+    font-family: Nunito, sans-serif;
+    padding-top: 2%;
+}
 
-/* ================== SLIDE =================== */
+#nome-modal{
+  font-size: 18px;
+  font-family: Nunito, sans-serif;
+  padding-bottom: 3%;
+}
+#email-modal{
+  font-size: 18px;
+  font-family: Nunito, sans-serif;
+  padding: 3% 0 3%;
+}
+#arquivo-modal{
+  font-size: 18px;
+  font-family: Nunito, sans-serif;
+  padding: 3% 0 3%;
+}
+#mensagem-modal{
+  font-size: 18px;
+  font-family: Nunito, sans-serif;
+  padding: 3% 0 3%;
+}
+.btn-danger{
+  background-color: #fc4747;
+  width: 100%;
+}
+.btn-primary{
+  width: 100%;
+}
 
-#ubea-hero {
-  min-height: 400px;
-  /* background: #fff url(../public/arquivos-layout/images/loader.gif) no-repeat center center; */
+/* CENTRALIZA O MODAL DO BOTÃO ENVIAR CURRILO - Tela home */
+.modal {
+  text-align: center;
 }
-#ubea-hero .btn {
-  font-size: 24px;
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
 }
-#ubea-hero .btn.btn-primary {
-  padding: 14px 30px !important; /* 14px 30px */
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
+
+
+.ubea-nav { /* CONTAINER NAV TOP - PAI*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+  width: 100%;
+  max-width: 100%;
+  /*float: left; */
+
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  
+  height: 90px;
+  background: #fff;
+
+  z-index: 10;
+  webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+#header .container-fluid { /* CONTAINER NAV TOP - FILHO */
+  /*max-width: 1440px;  1140px*/
+  
+  /*position: absolute;
+  margin: 0 auto;*/
+  padding-left: 0;
+  padding-right: 0;
+  
+  /*display: table-cell;
+  vertical-align: middle;*/
+  /*width: 100%;*/
+  position: relative;
+  
+  max-width: 100%;
+}
+
+.ubea-nav #ubea-logo{
+  padding-left: 35%; /*alterado */
+}
+
+.ubea-nav #ubea-logo a{
+  margin: 0;
+  padding: 0;
+}
+
+.ubea-nav a {
+  padding: 0px 10px;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .ubea-nav .menu-1, .ubea-nav .menu-2 {
+    display: none;
+  }
+}
+.ubea-nav ul {
+  padding: 0;
+  margin: 10px 0 0 0px; /* 2PX 0 0 0 */
+
+  left: 5%;  /*AFASTA TODO O CONTEUDO DO MENU (UL > LI) para a esquerda */
+  position: relative;
+
+  
+}
+.ubea-nav button{ /* centralizando o menu */
+  margin-bottom: 1%;
+  margin-left: 1.5%;
+  position: relative;
+}
+.ubea-nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+
+}
+.ubea-nav ul li a { 
+  font-size: 16px;
+  padding: 0px 12px; /* 0 10px tamanho <a> no menu lado direito top navbar */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333;
+
+  text-decoration: none;
+}
+
+/* DROPDOWN MENU TOP */
+#submenu {
+  left:10%;
+  opacity: 0;
+  position: absolute;
+  top: 0; /* 35px */
+  width: 40%;
+  visibility: hidden;
+  background: transparent;
+}
+li:hover ul#submenu {
+  opacity: 1;
+  top: 0; /* 40px ajustar isso de acordo com top pad pad top & bottom vem */
+  padding-top:53px; /* distancia do top para o dropdown */
+  visibility: visible;
+}
+.fa-angle-down{
+  padding: 0 0 0 8px;
+  position: relative;
+  font-size: 17px; 
+}
+
+#submenu li {
+  float: none;
+  width: 301px;
+
+}
+#submenu a:hover {
+  background: #ff6161;
+  color: #fff;
+}
+#submenu a {
+  background-color:#fff;
+  height: 60px;
+  font-family: Nunito, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.9px;
+  text-align: left;
+  
+  padding: 15px 0 0 18px;
+}
+
+/* OUTROS AJUSTES PARA O DROPDOWN */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul li a {
+  color: #333;
+  padding: 5px 10px;
+  display: block;
+}
+
+/* CENTRALIZA O MODAL DO BOTÃO ENVIAR CURRILO - Tela home */
+.modal {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* SLIDE */
+
 #ubea-hero .flexslider {
   border: none;
   z-index: 1;
@@ -70,6 +302,7 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
 }
 #ubea-hero .flexslider .flex-control-nav {
   bottom: 40px;
@@ -198,1073 +431,3 @@
   font-size: 22px;
 }
 
-
-/* ============ FRASE ============ */
-
-.conteudo-frase{
-  width: 100%;
-  padding: 7% 0 0 20%;
-  position: absolute;
-  
-}  
-.conteudo-frase p{
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 1.6px;
-  text-align: left;
-  color: #4d4d4d;
-  
-  width: 75%;
-
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-.container-frase-home{
-  height: 300px;
-  background-color: #f2f2f2;
-  margin-bottom: 108px; 
-}
-
-/* ========== CARDS - HOME ========= */
-
-/*  
-    =========================
-    SESSAO SERVIÇOS - HOME 
-    =========================
-*/
-.titulo-seguimentos{
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 110px;
-}
-.titulo-seguimentos p{
-    font-family: Nunito, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.25;
-    letter-spacing: 2px;
-    color: #4d4d4d;
-    padding: 0 0 79px 75px;
-}
-
-.card1{
-    background-color: #f4863b;
-    width: 470px;
-    height: 380px;
-    opacity: 0.95;
-    border-radius: 5px;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-}
-.card2{
-    width: 470px;
-    height: 380px;
-    opacity: 0.95;
-    border-radius: 5px;
-    background-color: #5497d3;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-}
-.card3{
-    width: 470px;
-    height: 380px;
-    opacity: 0.95;
-    border-radius: 5px;
-    background-color: #fc4747;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-}
-.card4{
-    width: 470px;
-    height: 380px;
-    opacity: 0.95;
-    border-radius: 5px;
-    background-color: #8559a5;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-}
-
-.container-cards1{
-    display: flex;
-    justify-content: center;
-}
-.container-cards2{
-    display: flex;
-    justify-content: center;
-}
-.container-cards1 > div{
-    background-color: transparent;
-    margin: 15px;
-}
-.container-cards2 > div{
-    background-color: transparent;
-    margin: 15px;
-}
-.container-cards1 a{
-    text-decoration: none;
-}
-.container-cards2 a{
-    text-decoration: none;
-}
-
-#sessao-cards-home{
-    margin: 0 0 110px;
-}
-
-.container-cards1 ul li{
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2;
-    letter-spacing: 1px;
-    text-align: left;
-    color: #fff;
-    list-style: none;
-    position: relative;
-}
-.container-cards2 ul li{
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2;
-    letter-spacing: 1px;
-    text-align: left;
-    color: #fff;  
-    list-style: none;
-    position: relative;
-}
-.titulo1 p{
-    position: relative;
-    font-family: Nunito, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.08;
-    letter-spacing: 1.2px;
-    text-align: left;
-    color: #ffffff;
-    padding: 30px 0 0 43px;
-}
-.titulo1 p::before{
-    content: '';
-    position: relative;
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    background: #db6b1f;
-    bottom: -45px;
-}
-.titulo2 p{
-    position: relative;
-    font-family: Nunito, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.08;
-    letter-spacing: 1.2px;
-    text-align: left;
-    color: #ffffff;
-    padding: 30px 0 0 43px;
-}
-.titulo2 p::before{
-    content: '';
-    position: relative;
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    background: #387dba;
-    bottom: -45px;
-}
-.titulo3 p{
-    position: relative;
-    font-family: Nunito, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.08;
-    letter-spacing: 1.2px;
-    text-align: left;
-    color: #ffffff;
-    padding: 30px 0 0 43px;
-}
-.titulo3 p::before{
-    content: '';
-    position: relative;
-    display: block;
-    width: 35px;
-    height: 3px;
-    border-radius: 2px;
-    background: #e32929;
-    bottom: -45px;
-}
-.titulo4 p{
-    position: relative;
-    font-family: Nunito, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.08;
-    letter-spacing: 1.2px;
-    text-align: left;
-    color: #ffffff;
-    padding: 30px 0 0 43px;
-}
-.titulo4 p::before{
-    content: '';
-    position: relative;
-    display: block;
-    width: 35px;
-    height: 3px;
-    border-radius: 2px;
-    background: #6b3e8c;
-    bottom: -45px;
-}
-.titulo1 a{
-    text-decoration: none;
-    color: #fff;
-}
-.titulo2 a{
-    text-decoration: none;
-    color: #fff;
-}
-.titulo3 a{
-    text-decoration: none;
-    color: #fff;
-}
-.titulo4 a{
-    text-decoration: none;
-    color: #fff;
-}
-.card1{
-    background-size: cover;
-    padding: 0 0 0 0;
-    position: relative;
-
-    transition: transform .2s;
-}
-.card1:hover{
-    transform: scale(1.03);
-}
-
-.card1::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(244, 134, 59, 0.95);
-    border-radius: 5px;
-}
-.card2{
-    background-size: cover;
-    padding: 0 0 0 0;
-    position: relative;
-
-    transition: transform .2s;
-}
-
-.card2:hover{
-    transform: scale(1.03); 
-}
-
-.card2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(84, 151, 211, 0.95);
-    border-radius: 5px;
-}
-.card3{  
-    background-size: cover;
-    padding: 0 0 0 0;
-    position: relative;
-
-    transition: transform .2s;
-}
-
-.card3:hover{
-    transform: scale(1.03); 
-}
-
-.card3::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(252, 71, 71, 0.95);
-    border-radius: 5px;
-}
-.card4{
-    background-size: cover;
-    padding: 0 0 0 0;
-    position: relative;
-
-    transition: transform .2s;
-}
-
-.card4:hover{
-    transform: scale(1.03);  
-}
-
-.card4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(133, 89, 165, 0.95);
-    border-radius: 5px;
-}
-  
-/* SIMBOLOS SVG - CARDS HOME
---------------------------------*/
-.card1 img{              
-    width: 50px;
-    height: 48px;
-    position: absolute;
-    float: right;
-    bottom: 0;
-    right: 0;
-    margin: 0 25px 25px;
-}
-.card2 img{
-    width: 50px; 
-    height: 48px;
-    position: absolute;
-    float: right;
-    bottom: 0;
-    right: 0;
-    margin: 0 25px 25px;
-}
-.card3 img{
-    width: 50px; 
-    height: 48px;
-    position: absolute;
-    float: right; 
-    bottom: 0;
-    right: 0;
-    margin: 0 25px 25px;
-}
-.card4 img{
-    width: 50px; 
-    height: 48px;
-    position: absolute;
-    float: right;
-    bottom: 0;
-    right: 0;
-    margin: 0 25px 25px;
-}
-
-
-/*  
-    =========================
-    BOTAO SESSAO SERVIÇOS - HOME 
-    =========================
-*/
-.div-btn-servicos{
-    display: flex;
-    justify-content: center;
-}
-  
-.btn-servicos:hover{
-    background-color: rgb(252, 71, 71);
-    transition: 0.5s;
-}
-  
- .btn-servicos{
-    width: 335px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: rgba(244, 134, 59, 0.88);
-    color: #fff;
-    text-align: center;
-    float: left;
-    
-    position: relative;
-    /* flex para alinhar texto do botao */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    text-align: center;  
-}
-.div-btn-servicos a{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.5s;
-}
-
-
-/*  
-    =========================
-    SESSAO VAGAS - HOME 
-    =========================
-*/
-.sessao-vagas{
-  font-family: Nunito, sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: 2px;
-  text-align: left;
-  color: #4d4d4d;
-  
-  margin: 108px 0 79px 60px;
-  
-}
-#sessao-vagas{
-  margin: 0 0 224px 0;
-}
-.container-vagas {
-  display: flex;
-  justify-content: center;
-}
-.container-vagas2 {
-  display: flex;
-  justify-content: center;
-}
-/* margin para distancia de bottom e right */
-.container-vagas > div{
-  margin: 10px;
-  text-align: center;
-}
-.container-vagas2 > div{
-  margin: 10px;
-  text-align: center; 
-}
-#vaga-1{
-  transition: transform .2s;
-}
-#vaga-2{
-  transition: transform .2s; 
-}
-#vaga-3{
-  transition: transform .2s;  
-}
-#vaga-4{
-  transition: transform .2s;
-}
-#vaga-1:hover{
-  transform: scale(1.03);
-}
-#vaga-2:hover{
-  transform: scale(1.03);
-}
-#vaga-3:hover{
-  transform: scale(1.03);
-}
-#vaga-4:hover{
-  transform: scale(1.03);
-}
-.container-vagas img{
-  width: 470px; height: 470px;
-} 
-.container-vagas2 img{
-  width: 470px; height: 470px;
-}
-
-/*  
-    =========================
-    SESSAO CONTADOR - HOME 
-    =========================
-*/
-#facts {
-  /*background: url(../../../../\assets/images/fundo-rough.jpg) center top no-repeat fixed; */
-  background-size: cover;
-  padding: 80px 0 0 12%; /* 60px 0 0 0*/
-  position: relative;
-  height: 100%;
-}
-  
-#facts::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-
-  z-index: 2;
-}
-
-#facts .container {
-  position: relative;
-  z-index: 1;
-}
-
-#facts .counters span {
-  font-family: Roboto, sans-serif;
-  font-size: 48px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.77;
-  letter-spacing: normal;
-  text-align: center;
-  color: #387dba;
-}
-
-#facts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #333;
-}
-
-#facts .facts-img {
-  text-align: center;
-  padding-top: 30px;
-}
-
-/*  
-    =========================
-    SESSAO DEPOIMENTOS - HOME 
-    =========================
-*/
-
-.sessao-depoimentos{
-    font-family: Nunito, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.25;
-    letter-spacing: 2px;
-    text-align: left;
-    color: #4d4d4d;
-    padding: 108px 0 79px;
-    padding-left: 8%;
-}
-  
-#sessao-comentarios{
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    margin-bottom: 183px;
-}
-
-.container-comentarios1{
-    padding-left: 7%;
-    margin-bottom: 3%;
-}
-.container-comentarios2{
-    padding-left: 7%;  
-}
-
-.card-comentario1{ 
-    width: 45%;
-}  
-.card-comentario2{
-    width: 45%; 
-}
-.card-comentario3{ 
-    width: 45%;
-}
-
-.card-comentario4{
-    width: 45%; 
-}
-
-.bloco-foto{
-    width: 110px;
-    height: 110px;
-    margin-right: 2%;
-    float: left;
-}
-.bloco-foto img{
-    bottom: 0;
-    width: 100%;
-    border-radius: 50%;
-}
-.bloco-comentario{
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #2d384d;
-}
-  
-.bloco-comentario b{
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #2d384d;
-}
-
-
-/*  
-    =========================
-    SESSAO EBOOK - HOME 
-    =========================
-*/
-
-.flex-container{ /* CONTAINER */
-  display: flex;
-  align-items: center;
-  height: 350px;
-  max-width: 100%;
-}
-
-.ebook-background{ /* BACKGROUND */
-  /*background: url(../../../../assets/images/back-cafe.jpg) center top no-repeat;*/
-  background-size: cover;
-  padding: 0 0 0 0;
-  position: relative;
-}
-.ebook-background::before { /* FILTRO RGBA */
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(84, 151, 211, 0.6);    
-}
-.ebook-background .container {
-  position: relative; 
-  padding: 0 0 0 2%;
-}
-
-.flex-conteudo-ebook p{ /* FONTE DA SESSAO */
-  font-family: Nunito, sans-serif;
-  width: 479px;
-  height: 104px;
-  font-size: 32px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: 2px;
-  text-align: left;
-  color: #ffffff;
-}
-.botao-baixar-ebook{ /* BOTAO */
-  font-family: Nunito, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 1px;
-  border-radius: 25px;
-  transition: 0.4s;
-
-  color: #fff;
-  background: #f4863b;/* #18d26e; */
-  width: 271px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-decoration:none;
-  list-style: none;
-}
-
-.botao-baixar-ebook:hover{ /* HOVER DO BOTAO */
-  background: #fc4747;
-  color: #fff;
-  text-decoration:none;
-  list-style: none;
-}
-
-/*  
-    =========================
-    FOOTER - HOME 
-    =========================
-*/
-#footer{
-    margin-top: 109px;
-    margin-bottom: 73px;
-    width: 100%;
-    
-  }
-  #footer .container-fluid{
-    width: 77%;
-    padding-left: 2%;
-  }
-  .logo-rodape img{
-    width: 270px;
-    height: 68px;
-  }
-  
-  /* DIV - ENDERECO HUNT */
-  .endereco-hunt{ 
-    margin-top: 60px;
-  }
-  .endereco-hunt h4{
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.35;
-    letter-spacing: normal;
-    text-align: left;
-    color: #4d4d4d;
-    padding-bottom: 16px;
-  }
-  .endereco-hunt p{ /* CONTEUDO */
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    text-align: left;
-    color: #8c93a3;
-    
-  }
-  
-  /* DIV - SOCIAL LINKS */
-  .social-links{
-    padding-top: 48px;
-  }
-  .social-links h4{
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.35;
-    letter-spacing: normal;
-    text-align: left;
-    color: #4d4d4d;
-    
-  }
-  .social-links a {
-    display: inline-block;
-    transition: 0.3s;
-    padding-right: 30px;
-  }
-  .social-links a:hover {
-    opacity: 0.9;
-    color: #fff;
-  }
-  
-  /* DIV- DOWNLOADS NO APP */
-  .titulo-downloads{
-    margin-top: 60px;
-    padding-left: 10%;
-  }
-  .titulo-downloads h4{
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.35;
-    letter-spacing: normal;
-    text-align: left;
-    color: #4d4d4d;
-    padding-bottom: 16px;
-  }
-  .img-app-store{
-    padding-bottom: 24px;
-  }
-  .img-app-store img{
-    width: 170px;
-    height: 50px;
-  
-  }
-  .img-app-googleplay img{
-    width: 170px;
-    height: 50.2px;
-  }
-  
-  /* COPYRIGHT */
-  .copyright{
-    background-color: #fff;
-    height: 80px;
-    border-top: 1px solid #8c93a3;
-    position:relative;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .copyright .conteudo{
-    font-family: Nunito, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.19;
-    letter-spacing: normal;
-    text-align: left;
-    color: #2d384d;
-  }
-  
-  /* DIV - FORMULARIO ENVIAR CURRICULO - RODAPE */
-  #form-curriculo{
-    margin-top: 60px;
-    align-items: center;
-    padding-left: 5%;
-  }
-  
-  #form-curriculo h4{
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.35;
-    letter-spacing: normal;
-    text-align: left;
-    color: #4d4d4d;
-  }
-  
-  #contact input[type="text"], 
-  #contact input[type="email"], 
-  #contact input[type="tel"], 
-  #contact input[type="url"], 
-  #contact textarea, 
-  #contact button[type="submit"] { 
-    font:400 17px/16px "Open Sans", Helvetica, Arial, sans-serif; 
-    border-radius:4px;
-  
-  }
-  
-  #contact h4 {
-    color: #F96;
-    display: block;
-    font-size: 30px;
-    font-weight: 400;
-  }
-  
-  #contact h4 {
-    margin:5px 0 15px;
-    display:block;
-    font-size:13px;
-  }
-  
-  fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-  }
-  
-  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-    width:100%;
-    border:1px solid #CCC;
-    background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-  }
-  
-  #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-    -webkit-transition:border-color 0.3s ease-in-out;
-    -moz-transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
-  }
-  
-  #contact textarea {
-    height:100px;
-    max-width:100%;
-    resize:none;
-  }
-  
-  #contact button[type="submit"] {
-    cursor:pointer;
-    width:50%;
-    float: right;
-    border:none;
-    border-radius: 2px;
-    background:#fc4747;
-    color:#FFF;
-    margin:0 0 5px;
-    padding:7.5px;
-    font-size:15px;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-  
-  #contact button[type="submit"]:hover {
-    opacity: 0.9;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-  
-  #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-  
-  #contact input:focus, #contact textarea:focus {
-    outline:0;
-    border:1px solid #999;
-  
-  
-    -webkit-border-radius:4px;
-    box-shadow: 1px 1px 2px #333333;    
-    -moz-box-shadow: 1px 1px 2px #333333;
-    -webkit-box-shadow: 1px 1px 2px #333333;
-  
-      -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    
-    
-    border: 1px solid #DDDDDD;
-  
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    
-    
-    border: 1px solid rgba(81, 203, 238, 1);
-  }
-  ::-webkit-input-placeholder {
-   color:#888;
-  }
-  :-moz-placeholder {
-   color:#888;
-  }
-  ::-moz-placeholder {
-   color:#888;
-  }
-  :-ms-input-placeholder {
-   color:#888;
-  }
-
-  /* EVENTO DE CLICK PARA SUBIR AO TOPO DA PAGINA */
-  .gototop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .gototop.active {
-    opacity: 1;
-    visibility: visible;
-  }
-  .gototop a {
-    width: 50px;
-    height: 50px;
-    display: table;
-    background-color: #fc4747;
-    color: #fff;
-    text-align: center;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    border-radius: 50px;
-  }
-  .gototop a i {
-    height: 50px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .gototop a:hover, .gototop a:active, .gototop a:focus {
-    text-decoration: none;
-    outline: none;
-    opacity: 0.9;
-  }
-
-/*  
-    =========================
-    SESSAO FRASE - HOME 
-    =========================
-*/
-.conteudo-frase{
-    width: 50%;
-}  
-.conteudo-frase p{
-    font-family: Roboto, sans-serif;
-    font-size: 24px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.56;
-    letter-spacing: 1.6px;
-    text-align: left;
-    color: #4d4d4d;
-    
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-}
-
-.container-frase-home{
-    height: 300px;
-    background-color: #f2f2f2;
-    margin-bottom: 108px;
-}

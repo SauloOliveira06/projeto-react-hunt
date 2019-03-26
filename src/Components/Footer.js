@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import './Footer.css'
 
 class Footer extends Component {
     render() {
@@ -82,7 +83,7 @@ class Footer extends Component {
       </div>
 
       <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        <a href="#" class="js-gotop"><i class="fas fa-arrow-up fa-2x"></i></a>
       </div>
     </div>
         );

@@ -87,8 +87,6 @@ class Terceirizacao_temporarios extends Component {
                     </div>
                 </section>
 
-
-
                 <div class="container col-md-12 col-xs-4 col-sm-12">
 
                     <div class="titulo-content">

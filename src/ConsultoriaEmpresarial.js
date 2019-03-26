@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import client from './Components/Client';
 
 import './App.css'
-import './Consultoria_empresarial.css'
+import './ConsultoriaEmpresarial.css'
 
 
-
+/* IMAGEM BANNER PAGINA CONSULTORIA EMPRESARIAL */
 let img = 'arquivos-layout/images/banner-consultoria.jpg'
 var banner  = {
   background: `url(${img}) round`
 }
 
-
+/* IMAGEM DE FUNDO DA SESSAO EBOOK - CONSULTORIA EMPRESARIAL */
 let ebookimg = 'arquivos-layout/images/back-cafe.jpg'
 var ebook  = {
     background: `url(${ebookimg}) round`
 }
 
-class Consultoria_empresarial extends Component {
+class ConsultoriaEmpresarial extends Component {
 
   constructor(){
     super()
@@ -31,7 +31,8 @@ class Consultoria_empresarial extends Component {
       titulo_card4: [],
       titulo_card5: [],
       titulo_card6: [],
-      texto_ebook: []
+      texto_ebook: [],
+      
     }
   }
   componentDidMount(){
@@ -306,4 +307,4 @@ render(){
 }
 
 
-export default Consultoria_empresarial
+export default ConsultoriaEmpresarial

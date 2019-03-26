@@ -46,11 +46,7 @@ class Slide extends Component {
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        {this.state.texto_slidepage.length === 0 ?
-                                            <div>Carregando</div>
-                                            :
-                                            <p>{this.state.texto_slidepage.fields.textoSlide}</p>
-                                        }
+                                    <h2>Soluções customizadas <br/>para pessoas e negócios.</h2>
                                         <button type="button" class="btn btn-slide" href="#">
                                             <p>Veja nossos serviços</p>
                                         </button>
