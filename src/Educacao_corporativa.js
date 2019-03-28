@@ -4,15 +4,12 @@ import './Educacao_corporativa.css'
 
 import client from './Components/Client';
 
-let img = 'arquivos-layout/images/cursos.jpg'
-var banner  = {
-    background: `url(${img})`
-}
+
 class Educacao_corporativa extends Component {
     constructor() {
         super()
         this.state = {
-            titulo_banner: [], frase: [], titulo_portfolio: [], texto_portfolio: [],
+            img_banner: [], titulo_banner: [], frase: [], titulo_portfolio: [], texto_portfolio: [],
             titulo_treinamentos: [], texto_treinamento: [], titulo_ambiente: [],
             texto_ambiente: [], titulo_servicos: [], titulo_card1: [], titulo_card2: [],
             titulo_card3: [], titulo_card4: [], titulo_card5: [], titulo_card6: [],
@@ -20,12 +17,15 @@ class Educacao_corporativa extends Component {
             depoimentos2: [], nome_depoimento3: [], depoimentos3: [], nome_depoimento3: [],
             depoimentos4: [], nome_depoimento4: [], texto_ebook: []
         }
+
+        
     }
     componentDidMount() {
         client.getEntries({
             'content_type': 'educacaoCorporativa'
         }).then((entries) => {
             this.setState({
+                img_banner: entries.items[0], 
                 titulo_banner: entries.items[0], frase: entries.items[0], 
                 titulo_portfolio: entries.items[0],
                 texto_portfolio: entries.items[0],
@@ -42,23 +42,16 @@ class Educacao_corporativa extends Component {
                 nome_depoimento3: entries.items[0], nome_depoimento4: entries.items[0],
                 texto_ebook: entries.items[0]
             })
-            /*
-            this.setState({ frase: entries.items[0] })
-            this.setState({ titulo_recrutamento: entries.items[0] })
-            this.setState({ texto_recrutamento: entries.items[0] })
-            this.setState({ titulo_servicos: entries.items[0] })
-            this.setState({ titulo_card1: entries.items[0] })
-            this.setState({ titulo_card2: entries.items[0] })
-            this.setState({ titulo_card3: entries.items[0] })
-            this.setState({ titulo_card4: entries.items[0] })
-            this.setState({ titulo_card5: entries.items[0] })
-            this.setState({ titulo_card6: entries.items[0] })
-            this.setState({ titulo_card7: entries.items[0] })
-            this.setState({ titulo_card8: entries.items[0] })
-            this.setState({ texto_ebook: entries.items[0] }) */
+            console.log(entries);
         })
     }
+
     render() {
+
+        let img = this.state.img_banner.length === 0 ? 'arquivos-layout/images/cursos.jpg' : this.state.img_banner.fields.imagemBanner.fields.file.url
+        var banner  = {
+            background: `url(${img})`
+        }
         return (
             <div>
                 <div class="banner-edu-corporativa" style={banner}>
